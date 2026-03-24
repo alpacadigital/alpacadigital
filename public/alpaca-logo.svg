@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" aria-label="Alpaca Digital Logo">
+  <!-- Left ear -->
+  <ellipse cx="16" cy="9.5" rx="2.8" ry="5" transform="rotate(-12 16 9.5)" fill="#4f46e5"/>
+  <ellipse cx="16" cy="9.5" rx="1.4" ry="3" transform="rotate(-12 16 9.5)" fill="#a5b4fc"/>
+  <!-- Right ear -->
+  <ellipse cx="29" cy="8.5" rx="2.8" ry="5" transform="rotate(12 29 8.5)" fill="#4f46e5"/>
+  <ellipse cx="29" cy="8.5" rx="1.4" ry="3" transform="rotate(12 29 8.5)" fill="#a5b4fc"/>
+  <!-- Head -->
+  <ellipse cx="22.5" cy="16" rx="8.5" ry="8" fill="#4f46e5"/>
+  <!-- Muzzle -->
+  <ellipse cx="25" cy="19.5" rx="4.5" ry="3" fill="#6366f1"/>
+  <!-- Left eye -->
+  <circle cx="19" cy="14.5" r="1.6" fill="white"/>
+  <circle cx="19.4" cy="14.5" r="0.8" fill="#1e1b4b"/>
+  <!-- Right eye -->
+  <circle cx="25.5" cy="14" r="1.6" fill="white"/>
+  <circle cx="25.9" cy="14" r="0.8" fill="#1e1b4b"/>
+  <!-- Neck -->
+  <path d="M17 22 Q16 26 15.5 30 L29 30 Q28.5 26 27 22 Q24.5 20.5 22 21 Q19.5 21.5 17 22Z" fill="#4338ca"/>
+  <!-- Body -->
+  <ellipse cx="22" cy="37" rx="12" ry="9" fill="#4338ca"/>
+  <!-- Legs -->
+  <rect x="13" y="43" width="4.5" height="5" rx="2.2" fill="#3730a3"/>
+  <rect x="19.5" y="43" width="4.5" height="5" rx="2.2" fill="#3730a3"/>
+  <rect x="25" y="43" width="4.5" height="5" rx="2.2" fill="#3730a3"/>
+</svg>
