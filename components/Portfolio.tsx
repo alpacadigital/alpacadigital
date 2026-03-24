@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const projects = [
   {
     name: "Rochester Family Eye Clinic",
@@ -6,8 +8,8 @@ const projects = [
       "A comprehensive, conversion-focused site for a 30-year Rochester optometry practice. Features service showcases, doctor bios, insurance info, and an appointment request form.",
     tags: ["Next.js", "Tailwind", "Copywriting"],
     url: "https://rochester-family-eye-clinic.vercel.app/",
+    screenshot: "/rochester-family-eye-clinic.vercel.app_.png",
     gradient: "from-sky-500 to-indigo-600",
-    letter: "R",
   },
   {
     name: "12th Street Dental",
@@ -16,8 +18,8 @@ const projects = [
       "Polished dental practice site featuring before/after galleries, service pages, Google Reviews integration, and a new patient onboarding flow.",
     tags: ["Next.js", "Tailwind", "Copywriting"],
     url: "https://12streetdental.alpacadigital.co/",
+    screenshot: "/12streetdental.alpacadigital.co_.png",
     gradient: "from-teal-500 to-emerald-600",
-    letter: "D",
   },
   {
     name: "Exclusive Drywall Company",
@@ -26,8 +28,8 @@ const projects = [
       "A heartfelt, story-driven site for a family-owned drywall business. Project gallery, testimonials, and a free estimate request form that drives real leads.",
     tags: ["Next.js", "Tailwind", "Copywriting"],
     url: "https://www.exclusivedrywallcompany.com/",
+    screenshot: "/www.exclusivedrywallcompany.com_.png",
     gradient: "from-orange-500 to-red-600",
-    letter: "E",
   },
   {
     name: "Fat Willy's Bar & Grill",
@@ -36,8 +38,8 @@ const projects = [
       "Vibrant restaurant site with menu highlights, weekly specials, event pages, online ordering integration, and an email capture for promotions.",
     tags: ["Next.js", "Tailwind", "Toast Integration"],
     url: "https://fatwillys.alpacadigital.co/",
+    screenshot: "/fatwillys.alpacadigital.co.png",
     gradient: "from-amber-500 to-orange-600",
-    letter: "F",
   },
   {
     name: "Kiwanis Rochester Day Makers",
@@ -46,8 +48,8 @@ const projects = [
       "A clean, mission-driven site for a local Kiwanis chapter. Features event calendar, impact stats, membership sign-ups, and community storytelling.",
     tags: ["Next.js", "Tailwind", "Copywriting"],
     url: "https://kiwanis.alpacadigital.co/",
+    screenshot: "/kiwanis.alpacadigital.co_.png",
     gradient: "from-blue-500 to-violet-600",
-    letter: "K",
   },
 ];
 
@@ -79,13 +81,16 @@ export default function Portfolio() {
               rel="noopener noreferrer"
               className="group block bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-indigo-100 dark:hover:border-indigo-900 hover:shadow-lg dark:hover:shadow-slate-900 transition-all duration-300 overflow-hidden"
             >
-              {/* Color block header */}
-              <div
-                className={`h-36 bg-gradient-to-br ${project.gradient} flex items-center justify-center`}
-              >
-                <span className="text-5xl font-black text-white/30 select-none">
-                  {project.letter}
-                </span>
+              {/* Screenshot */}
+              <div className="relative h-44 overflow-hidden bg-slate-100 dark:bg-slate-800">
+                <Image
+                  src={project.screenshot}
+                  alt={`${project.name} website screenshot`}
+                  fill
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+                <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-300`} />
               </div>
 
               {/* Content */}
