@@ -55,11 +55,16 @@ export default function Contact() {
               Get in Touch
             </p>
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white tracking-tight mb-6 leading-tight">
-              Ready to build something great?
+              Let&apos;s talk about your project.
             </h2>
-            <p className="text-lg text-slate-500 dark:text-slate-400 leading-relaxed mb-10">
-              Tell us about your project and we&apos;ll get back to you within one
-              business day with a free consultation and quote.
+            <p className="text-lg text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+              Send me a message and I&apos;ll personally get back to you within one
+              business day — no sales scripts, no pressure, just an honest
+              conversation about what you need.
+            </p>
+            <p className="text-base text-slate-500 dark:text-slate-400 italic mb-10">
+              &ldquo;A 15-minute call is usually all it takes to figure out if we&apos;re
+              a good fit.&rdquo;
             </p>
 
             {/* Details */}

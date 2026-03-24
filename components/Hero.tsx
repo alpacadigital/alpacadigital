@@ -3,12 +3,16 @@ export default function Hero() {
     <section className="min-h-screen flex items-center bg-white dark:bg-slate-950 pt-16">
       <div className="max-w-6xl mx-auto px-6 py-24 md:py-32">
         <div className="max-w-3xl">
-          {/* Eyebrow */}
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-indigo-50 dark:bg-indigo-950 rounded-full mb-8">
-            <span className="w-2 h-2 bg-indigo-600 dark:bg-indigo-400 rounded-full" />
-            <span className="text-xs font-semibold text-indigo-700 dark:text-indigo-300 tracking-wide uppercase">
-              Web Design &amp; Development
-            </span>
+          {/* Personal greeting */}
+          <div className="flex items-center gap-3 mb-8">
+            <div className="w-10 h-10 rounded-full bg-indigo-100 dark:bg-indigo-900 flex items-center justify-center text-indigo-700 dark:text-indigo-300 font-bold text-sm shrink-0">
+              S
+            </div>
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-indigo-50 dark:bg-indigo-950 rounded-full">
+              <span className="text-sm font-medium text-indigo-700 dark:text-indigo-300">
+                Hey, I&apos;m Shawn &mdash; web designer based in Rochester, MN 👋
+              </span>
+            </div>
           </div>
 
           {/* Headline */}
@@ -19,7 +23,7 @@ export default function Hero() {
 
           {/* Sub-headline */}
           <p className="text-xl text-slate-500 dark:text-slate-400 leading-relaxed mb-10 max-w-xl">
-            We design and build fast, modern websites for local businesses —
+            I design and build fast, modern websites for local businesses —
             helping you attract more customers and stand out online.
           </p>
 
@@ -35,7 +39,7 @@ export default function Hero() {
               href="#contact"
               className="px-8 py-4 bg-white dark:bg-slate-800 text-slate-900 dark:text-white font-semibold rounded-xl border border-slate-200 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 transition-colors text-center"
             >
-              Get a Free Quote
+              Let&apos;s Talk
             </a>
           </div>
 
