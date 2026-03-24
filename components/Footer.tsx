@@ -19,6 +19,15 @@ export default function Footer() {
               to stand out online.
             </p>
           </div>
+
+          {/* Links */}
+          <div className="flex flex-wrap gap-12">
+            <div>
+              <p className="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-4">
+                Quick Links
+              </p>
+              <ul className="space-y-2.5">
+                {["Services", "Work", "About", "Contact"].map((item) => (
                   <li key={item}>
                     <a
                       href={`#${item.toLowerCase()}`}
