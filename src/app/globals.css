@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+/* Brand palette pulled from the Alpaca Digital business card */
+@theme {
+  --color-navy-950: #03142a;
+  --color-navy-900: #061e3a;
+  --color-navy-800: #0a2a4d;
+  --color-navy-700: #123a63;
+  --color-navy-600: #1d4d7d;
+
+  --color-teal-300: #5fe0e1;
+  --color-teal-400: #19c6c8;
+  --color-teal-500: #00b8ba;
+  --color-teal-600: #009a9c;
+  --color-teal-700: #007c7f; /* accessible teal for text on light backgrounds */
+
+  --color-ink: #0b1b2e;
+  --color-body: #475a6e;
+  --color-mist: #f4f7fa;
+  --color-line: #e2e8ef;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-teal-400);
+  color: var(--color-navy-950);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Small uppercase label with teal rules, echoing "— SCAN TO VISIT —" on the card */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+.eyebrow::before {
+  content: "";
+  width: 1.5rem;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
