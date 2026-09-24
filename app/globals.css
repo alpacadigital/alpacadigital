@@ -2,19 +2,174 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* Day map */
 :root {
-  --background: #ffffff;
-  --foreground: #0f172a;
+  --land: #e6ebe2;
+  --land-deep: #d9e0d4;
+  --paper: #ffffff;
+  --street: #ffffff;
+  --casing: #c9d2c6;
+  --highway: #f2b33d;
+  --highway-casing: #d2921c;
+  --park: #c3dcae;
+  --park-ink: #3f6b2e;
+  --water: #a7d3db;
+  --water-ink: #2a6f7a;
+  --ink: #13201b;
+  --ink-2: #45544d;
+  --ink-3: #66756e;
+  --rule: #c9d2c6;
+  --route: #3b2ef0;
+  --route-ink: #ffffff;
+  --route-soft: #e4e2fd;
+  --band: #13201b;
+  --on-band: #e4ece7;
+  --on-band-2: #a9b8b1;
+  --band-rule: #2c3b35;
+  --up: #8fd16f;
+  --shadow: 19 32 27;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Night map */
+.dark {
+  --land: #0e1714;
+  --land-deep: #121d19;
+  --paper: #16221e;
+  --street: #24322c;
+  --casing: #0a110e;
+  --highway: #8f6418;
+  --highway-casing: #5e410f;
+  --park: #16291d;
+  --park-ink: #7fae6a;
+  --water: #10313a;
+  --water-ink: #6fb9c6;
+  --ink: #e4ece7;
+  --ink-2: #a9b8b1;
+  --ink-3: #8a9a93;
+  --rule: #2a3833;
+  --route: #8c83ff;
+  --route-ink: #0b0a26;
+  --route-soft: #221f4d;
+  --band: #08100d;
+  --on-band: #e4ece7;
+  --on-band-2: #a3b3ac;
+  --band-rule: #22302a;
+  --up: #8fd16f;
+  --shadow: 0 0 0;
+}
+
+@theme inline {
+  --color-land: var(--land);
+  --color-land-deep: var(--land-deep);
+  --color-paper: var(--paper);
+  --color-street: var(--street);
+  --color-casing: var(--casing);
+  --color-highway: var(--highway);
+  --color-park: var(--park);
+  --color-park-ink: var(--park-ink);
+  --color-water: var(--water);
+  --color-water-ink: var(--water-ink);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-rule: var(--rule);
+  --color-route: var(--route);
+  --color-route-ink: var(--route-ink);
+  --color-route-soft: var(--route-soft);
+  --color-band: var(--band);
+  --color-on-band: var(--on-band);
+  --color-on-band-2: var(--on-band-2);
+  --color-band-rule: var(--band-rule);
+  --color-up: var(--up);
+  --font-display: var(--font-big-shoulders), "Arial Narrow", sans-serif;
+  --font-sans: var(--font-overpass), system-ui, sans-serif;
+  --ease-settle: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  color-scheme: light;
+}
+.dark {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--land);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+p {
+  text-wrap: pretty;
+}
+
+::selection {
+  background: var(--route);
+  color: var(--route-ink);
+}
+
+:focus-visible {
+  outline: 3px solid var(--route);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+a {
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+}
+
+html {
+  scrollbar-color: var(--ink-3) var(--land);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Search caret in the hero */
+@keyframes caret {
+  50% {
+    opacity: 0;
+  }
+}
+.caret {
+  animation: caret 1s steps(1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Floating map-UI panels */
+.panel {
+  box-shadow:
+    0 1px 2px rgb(var(--shadow) / 0.1),
+    0 14px 36px -12px rgb(var(--shadow) / 0.28);
+}
+.dark .panel {
+  box-shadow:
+    0 0 0 1px var(--rule),
+    0 14px 36px -12px rgb(0 0 0 / 0.6);
 }
