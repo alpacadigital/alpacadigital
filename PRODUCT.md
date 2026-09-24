@@ -8,11 +8,11 @@ web
 
 ## Users
 
-Owners of local businesses in and around Rochester, MN: dental and eye clinics, contractors, restaurants and bars, non-profits. They are busy, not technical, and usually find this site after a referral or a Google search. Their real question is "will this person get me more customers?", not "can they build a nice site?". Most read on a phone between jobs.
+Owners of local businesses in and around Rochester, MN: dental and eye clinics, contractors, restaurants and bars, non-profits. They are busy and not technical. Most arrive after meeting Gates in person: he hands them a business card and they scan the QR code or type the URL later to check him out. Some come from referrals or Google search, which is a bonus, not the main goal. Their real question is "will this person get me more customers?", not "can they build a nice site?". Most read on a phone between jobs.
 
 ## Product Purpose
 
-Alpaca Digital is Gates Jones, a one-person studio. Gates gets local businesses more customers by owning everything that decides whether a nearby customer finds and picks them: the website, on-page and local SEO, and Google Business Profile rankings. The site's job is to turn a visiting owner into a free visibility audit request (or a call).
+Alpaca Digital is Gates Jones, a one-person studio. Gates gets local businesses more customers by owning everything that decides whether a nearby customer finds and picks them: the website, on-page and local SEO, and Google Business Profile rankings. The site's main job is credibility: an owner who just met Gates should come away trusting him and wanting to work with him, through proof, real work, who Gates is, and how working with him goes. The free visibility audit and a call or text are the easy next steps. Inbound lead generation and SEO growth tactics come second.
 
 ## Positioning
 
