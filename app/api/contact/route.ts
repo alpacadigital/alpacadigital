@@ -1,8 +1,8 @@
 import { Resend } from "resend";
 import { NextRequest, NextResponse } from "next/server";
 
-// Must be an address on a domain verified in Resend.
-const FROM_EMAIL = "contact@alpacadigital.co";
+// CONTACT_FROM_EMAIL must use a domain verified in Resend.
+const FROM = process.env.CONTACT_FROM_EMAIL ?? "Alpaca Digital Website <contact@alpacadigital.co>";
 const TO_EMAIL = process.env.CONTACT_TO_EMAIL ?? "hello@alpacadigital.co";
 
 const FIELDS = { name: 100, business: 150, email: 200, phone: 40, website: 200, message: 3000 } as const;
@@ -41,7 +41,7 @@ export async function POST(req: NextRequest) {
   try {
     const resend = new Resend(process.env.RESEND_API_KEY);
     const { error } = await resend.emails.send({
-      from: `Alpaca Digital Website <${FROM_EMAIL}>`,
+      from: FROM,
       to: TO_EMAIL,
       replyTo: f.email,
       subject: `Free audit request: ${f.business}`,
