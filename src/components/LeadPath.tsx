@@ -127,7 +127,7 @@ export function LeadPath() {
         className="absolute -right-48 top-1/2 size-[40rem] -translate-y-1/2 rounded-full border border-teal-400/20"
       />
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
-        <div className="max-w-3xl">
+        <div className="reveal max-w-3xl">
           <p className="eyebrow text-teal-400">How leads happen</p>
           <h2 className="mt-5 font-display text-4xl font-extrabold leading-[1.1] tracking-[-0.02em] sm:text-5xl">
             Every new customer follows the same path. I build every step of it.
@@ -138,7 +138,7 @@ export function LeadPath() {
           </p>
         </div>
 
-        <ol className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <ol className="reveal mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((s, i) => (
             <li
               key={s.title}

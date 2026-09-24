@@ -31,7 +31,7 @@ export function FAQ() {
   return (
     <section id="faq" className="border-t border-line bg-mist py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl gap-14 px-5 sm:px-8 lg:grid-cols-[1fr_1.6fr] lg:gap-20">
-        <div>
+        <div className="reveal">
           <p className="eyebrow text-teal-700">FAQ</p>
           <h2 className="mt-5 font-display text-4xl font-extrabold leading-[1.1] tracking-[-0.02em] text-navy-900 sm:text-5xl">
             Questions, answered.

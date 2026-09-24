@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Montserrat } from "next/font/google";
+import { Caveat, Inter, Montserrat } from "next/font/google";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -12,6 +12,13 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
   weight: ["500", "600", "700", "800"],
+});
+
+// Handwriting for margin notes and the signature: the personal layer on top of the brand fonts.
+const caveat = Caveat({
+  variable: "--font-caveat",
+  subsets: ["latin"],
+  weight: ["500", "700"],
 });
 
 const title = "Web Design, Local SEO & Google Business Profiles | Rochester, MN";
@@ -77,7 +84,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${inter.variable} ${montserrat.variable}`}>
+    <html lang="en" className={`${inter.variable} ${montserrat.variable} ${caveat.variable}`}>
       <body className="min-h-screen">
         <script
           type="application/ld+json"

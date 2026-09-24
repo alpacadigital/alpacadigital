@@ -22,9 +22,9 @@ const items = [
 
 export function Included() {
   return (
-    <section className="bg-white py-24 sm:py-32">
+    <section className="bg-mist py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="reveal mx-auto max-w-3xl text-center">
           <p className="eyebrow text-teal-700">Everything included</p>
           <h2 className="mt-5 font-display text-4xl font-extrabold leading-[1.1] tracking-[-0.02em] text-navy-900 sm:text-5xl">
             One partner for your whole online presence.
@@ -35,7 +35,7 @@ export function Included() {
           </p>
         </div>
 
-        <div className="mt-16 grid overflow-hidden rounded-2xl border border-line sm:grid-cols-2 lg:grid-cols-4">
+        <div className="reveal mt-16 grid overflow-hidden rounded-2xl border border-line bg-white sm:grid-cols-2 lg:grid-cols-4">
           {items.map((item) => (
             <div
               key={item.title}

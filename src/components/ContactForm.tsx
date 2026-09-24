@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
+import { FounderAvatar } from "./FounderAvatar";
 import { site } from "@/lib/site";
 
 const interests = ["New website", "SEO", "Google Business Profile", "Not sure yet"];
@@ -54,12 +55,25 @@ export function ContactForm() {
           </a>
           .
         </p>
+        <p className="mt-6 -rotate-2 font-hand text-4xl font-bold text-teal-700">
+          Talk soon, {site.founderFirstName}
+        </p>
       </div>
     );
   }
 
   return (
     <form onSubmit={onSubmit} className="rounded-2xl bg-mist p-6 sm:p-9">
+      <div className="mb-7 flex items-center gap-4 border-b border-line pb-6">
+        <FounderAvatar
+          className="size-12 text-base ring-2 ring-teal-500/60 ring-offset-2 ring-offset-mist"
+          sizes="48px"
+        />
+        <p className="leading-snug text-body">
+          <span className="font-semibold text-ink">I read every message myself</span> and reply
+          within one business day.
+        </p>
+      </div>
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="name" className={label}>Your name</label>

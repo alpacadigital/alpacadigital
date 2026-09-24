@@ -20,7 +20,8 @@ export function BrowserFrame({
           <span className="size-2.5 rounded-full bg-[#febc2e]" />
           <span className="size-2.5 rounded-full bg-[#28c840]" />
         </div>
-        <div className="mx-auto w-full max-w-xs truncate rounded-md bg-white px-3 py-1 text-center text-[0.7rem] text-body ring-1 ring-line">
+        {/* inline-size containment keeps the URL's length from widening the page on small phones */}
+        <div className="mx-auto w-full max-w-xs truncate rounded-md bg-white px-3 py-1 text-center text-[0.7rem] text-body ring-1 ring-line contain-inline-size">
           {url}
         </div>
         <div className="w-10" aria-hidden />

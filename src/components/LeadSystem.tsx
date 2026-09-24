@@ -40,7 +40,7 @@ export function LeadSystem() {
   return (
     <section id="services" className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <div className="grid gap-10 lg:grid-cols-2 lg:items-end">
+        <div className="reveal grid gap-10 lg:grid-cols-2 lg:items-end">
           <div>
             <p className="eyebrow text-teal-700">The difference</p>
             <h2 className="mt-5 font-display text-4xl font-extrabold leading-[1.1] tracking-[-0.02em] text-navy-900 sm:text-5xl">
@@ -56,7 +56,7 @@ export function LeadSystem() {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-6 lg:grid-cols-3">
+        <div className="reveal mt-16 grid gap-6 lg:grid-cols-3">
           {pillars.map((p, i) => (
             <article
               key={p.title}

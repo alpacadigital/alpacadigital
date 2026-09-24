@@ -6,6 +6,9 @@ export const site = {
   url: "https://alpacadigital.co",
   founder: "Gates Jones",
   founderFirstName: "Gates",
+  // Drop a headshot in /public and set its path here (e.g. "/gates.jpg"). It shows up in
+  // the hero, About, and Contact sections. Until then, those spots show initials.
+  founderPhoto: null as string | null,
   phone: "(507) 322-8385",
   phoneHref: "tel:+15073228385",
   phoneE164: "+1-507-322-8385",
@@ -19,7 +22,7 @@ export const site = {
 export const nav = [
   { label: "Services", href: "#services" },
   { label: "Work", href: "#work" },
-  { label: "Process", href: "#process" },
   { label: "About", href: "#about" },
+  { label: "Process", href: "#process" },
   { label: "FAQ", href: "#faq" },
 ] as const;

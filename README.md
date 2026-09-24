@@ -26,6 +26,7 @@ Open http://localhost:3000.
 | What | File |
 | --- | --- |
 | Phone, email, name, city, site URL | `src/lib/site.ts` |
+| Founder headshot (hero, About, contact form) | Add the photo to `public/`, then set `founderPhoto` in `src/lib/site.ts` |
 | Hero headline and intro | `src/components/Hero.tsx` |
 | The three pillars (website / SEO / Google profile) | `src/components/LeadSystem.tsx` |
 | "How leads happen" 4-step path | `src/components/LeadPath.tsx` |

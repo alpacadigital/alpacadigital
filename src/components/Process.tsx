@@ -19,7 +19,7 @@ const steps = [
 
 export function Process() {
   return (
-    <section id="process" className="border-t border-line bg-mist py-24 sm:py-32">
+    <section id="process" className="bg-white py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl gap-14 px-5 sm:px-8 lg:grid-cols-[1fr_1.4fr] lg:gap-20">
         <div className="lg:sticky lg:top-28 lg:self-start">
           <p className="eyebrow text-teal-700">How it works</p>
@@ -38,11 +38,11 @@ export function Process() {
           </a>
         </div>
 
-        <ol className="relative space-y-4">
+        <ol className="reveal relative space-y-4">
           {steps.map((s, i) => (
             <li
               key={s.title}
-              className="grid grid-cols-[auto_1fr] gap-6 rounded-2xl bg-white p-7 ring-1 ring-line sm:p-8"
+              className="grid grid-cols-[auto_1fr] gap-6 rounded-2xl bg-mist p-7 ring-1 ring-line sm:p-8"
             >
               <span className="w-12 font-display text-4xl font-extrabold leading-none tabular-nums text-teal-500 sm:w-14">
                 {String(i + 1).padStart(2, "0")}

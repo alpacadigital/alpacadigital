@@ -33,9 +33,9 @@ export default function Home() {
         <LeadSystem />
         <LeadPath />
         <CaseStudy />
+        <About />
         <Included />
         <Process />
-        <About />
         <FAQ />
         <Contact />
       </main>

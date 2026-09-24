@@ -42,9 +42,14 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10">
-        <p className="mx-auto max-w-7xl px-5 py-6 text-sm text-white/45 sm:px-8">
-          © {new Date().getFullYear()} {site.name}. {site.tagline}.
-        </p>
+        <div className="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-6 text-sm text-white/45 sm:flex-row sm:items-center sm:justify-between sm:px-8">
+          <p>
+            © {new Date().getFullYear()} {site.name}. {site.tagline}.
+          </p>
+          <p>
+            Made in {site.city}, {site.region}.
+          </p>
+        </div>
       </div>
     </footer>
   );

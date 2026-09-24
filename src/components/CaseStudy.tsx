@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ArrowRight, ArrowUpRight, Check } from "lucide-react";
 import { BrowserFrame, PhoneFrame } from "./DeviceFrames";
+import { Arrow } from "./Hand";
 
 const built = [
   "A story-driven About section that introduces Marco and the family behind the business",
@@ -16,7 +17,7 @@ export function CaseStudy() {
   return (
     <section id="work" className="bg-mist py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+        <div className="reveal flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="eyebrow text-teal-700">Featured work</p>
             <h2 className="mt-5 font-display text-4xl font-extrabold leading-[1.1] tracking-[-0.02em] text-navy-900 sm:text-5xl">
@@ -36,7 +37,7 @@ export function CaseStudy() {
         </div>
 
         <div className="mt-14 grid gap-14 lg:grid-cols-[1.35fr_1fr] lg:gap-16">
-          <div className="relative pb-10 pr-6 sm:pr-16">
+          <div className="reveal relative pb-10 pr-6 sm:pr-16">
             <BrowserFrame url="exclusivedrywallcompany.com" className="group">
               <div className="relative aspect-[16/11]">
                 <Image
@@ -54,10 +55,13 @@ export function CaseStudy() {
               className="absolute bottom-0 right-0 w-[24%] min-w-24"
               sizes="180px"
             />
-            <p className="mt-4 hidden text-sm text-body sm:block">Hover to scroll the full homepage.</p>
+            <p className="mt-3 hidden items-end gap-2 pl-4 font-hand text-2xl font-medium text-teal-700 sm:flex">
+              <Arrow className="w-11 -rotate-45" />
+              <span className="-rotate-2">hover to scroll the whole homepage</span>
+            </p>
           </div>
 
-          <div>
+          <div className="reveal">
             <h3 className="font-display text-sm font-bold uppercase tracking-[0.18em] text-navy-900/50">
               The goal
             </h3>
