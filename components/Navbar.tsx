@@ -2,13 +2,15 @@
 
 import { useState, useSyncExternalStore } from "react";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 import Logo from "@/components/Logo";
 
 const links = [
-  { label: "Services", href: "#services" },
-  { label: "Results", href: "#results" },
-  { label: "Work", href: "#work" },
-  { label: "About", href: "#about" },
+  { label: "Services", href: "/#services" },
+  { label: "Results", href: "/#results" },
+  { label: "Work", href: "/#work" },
+  { label: "About", href: "/#about" },
+  { label: "FAQ", href: "/#faq" },
 ];
 
 function ThemeToggle() {
@@ -47,30 +49,30 @@ export default function Navbar() {
   return (
     <header className="fixed inset-x-3 top-3 z-50 mx-auto max-w-[1552px] lg:inset-x-6">
       <nav className="panel flex h-15 items-center justify-between rounded-full bg-paper/95 pr-2 pl-4 backdrop-blur-md lg:pl-5">
-        <a href="#top" className="flex items-center gap-2" aria-label="Alpaca Digital, back to top">
+        <Link href="/#top" className="flex items-center gap-2" aria-label="Alpaca Digital, back to top">
           <Logo className="h-8" />
           <span className="font-display text-[1.35rem] font-extrabold tracking-[0.04em] text-ink uppercase">
             Alpaca Digital
           </span>
-        </a>
+        </Link>
 
         <div className="hidden items-center gap-1 md:flex">
           {links.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="rounded-full px-4 py-2 text-[0.95rem] font-semibold text-ink-2 transition-colors hover:bg-land hover:text-ink"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <ThemeToggle />
-          <a
-            href="#audit"
+          <Link
+            href="/#audit"
             className="ml-1 rounded-full bg-route px-5 py-2.5 text-[0.95rem] font-bold text-route-ink transition-transform duration-300 ease-settle hover:-translate-y-px"
           >
             Free audit
-          </a>
+          </Link>
         </div>
 
         <div className="flex items-center gap-1 md:hidden">
@@ -93,22 +95,22 @@ export default function Navbar() {
       {open && (
         <div id="mobile-menu" className="panel mt-2 flex flex-col gap-1 rounded-3xl bg-paper p-3 md:hidden">
           {links.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
               className="rounded-2xl px-4 py-3 text-lg font-semibold text-ink hover:bg-land"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
-          <a
-            href="#audit"
+          <Link
+            href="/#audit"
             onClick={() => setOpen(false)}
             className="mt-1 rounded-full bg-route px-5 py-3.5 text-center text-lg font-bold text-route-ink"
           >
-            Get my free audit
-          </a>
+            Get my free visibility audit
+          </Link>
         </div>
       )}
     </header>

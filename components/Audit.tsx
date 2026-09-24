@@ -6,6 +6,7 @@ import { site, telHref } from "@/lib/site";
 const checks = [
   "Where you rank on the map for your most important searches",
   "A checkup of your Google Business Profile",
+  "How you compare to the competitors showing up ahead of you",
   "What your website could fix to turn more visits into calls",
 ];
 
@@ -80,7 +81,7 @@ export default function Audit() {
           </p>
         </div>
 
-        <div className="panel rounded-[28px] bg-paper p-6 text-ink sm:p-9">
+        <div className="panel rounded-[28px] bg-paper p-6 text-ink sm:p-9 lg:self-start">
           {status === "sent" ? (
             <div className="flex min-h-[26rem] flex-col justify-center" role="status">
               <svg width="56" height="56" viewBox="0 0 56 56" aria-hidden="true">
@@ -132,22 +133,9 @@ export default function Audit() {
               </div>
               <div>
                 <label htmlFor="a-website" className={labelClass}>
-                  Website <span className="font-normal text-ink-2">(if you have one)</span>
+                  Website or Google listing <span className="font-normal text-ink-2">(optional)</span>
                 </label>
-                <input id="a-website" name="website" inputMode="url" placeholder="yourbusiness.com" maxLength={200} className={inputClass} />
-              </div>
-              <div>
-                <label htmlFor="a-message" className={labelClass}>
-                  What do you want more of? <span className="font-normal text-ink-2">(optional)</span>
-                </label>
-                <textarea
-                  id="a-message"
-                  name="message"
-                  rows={3}
-                  maxLength={3000}
-                  placeholder="More calls for bathroom remodels, more new patients, busier weeknights..."
-                  className={`${inputClass} resize-y`}
-                />
+                <input id="a-website" name="website" inputMode="url" placeholder="yourbusiness.com or a Google Maps link" maxLength={200} className={inputClass} />
               </div>
 
               {status === "error" && (
@@ -161,9 +149,14 @@ export default function Audit() {
                 disabled={status === "sending"}
                 className="mt-1 inline-flex items-center justify-center gap-2 rounded-full bg-route px-7 py-4 text-[1.05rem] font-bold text-route-ink transition-[transform,opacity] duration-300 ease-settle hover:-translate-y-0.5 disabled:translate-y-0 disabled:opacity-70"
               >
-                {status === "sending" ? "Sending..." : "Send me my free audit"}
+                {status === "sending" ? "Sending..." : "Get my free visibility audit"}
               </button>
-              <p className="text-center text-sm text-ink-2">It&apos;s free, and you&apos;re not signing up for anything.</p>
+              <p className="text-center text-sm text-ink-2">
+                It&apos;s free, and you&apos;re not signing up for anything.{" "}
+                <a href="/privacy" className="underline decoration-rule underline-offset-4 hover:decoration-ink">
+                  How I handle your info
+                </a>
+              </p>
             </form>
           )}
         </div>

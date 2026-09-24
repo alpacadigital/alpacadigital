@@ -63,7 +63,7 @@ const jsonLd = {
   email: site.email,
   ...(site.phone && { telephone: site.phone }),
   image: `${site.url}/gates.png`,
-  logo: `${site.url}/alpaca-mark.png`,
+  logo: `${site.url}/alpaca-logo.png`,
   description,
   founder: { "@type": "Person", name: site.owner },
   address: {

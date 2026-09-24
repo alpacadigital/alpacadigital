@@ -1,12 +1,15 @@
+import Link from "next/link";
 import Logo from "@/components/Logo";
 import { site, telHref } from "@/lib/site";
 
 const links = [
-  { label: "Services", href: "#services" },
-  { label: "Results", href: "#results" },
-  { label: "Work", href: "#work" },
-  { label: "About", href: "#about" },
-  { label: "Free audit", href: "#audit" },
+  { label: "Services", href: "/#services" },
+  { label: "Results", href: "/#results" },
+  { label: "Work", href: "/#work" },
+  { label: "About", href: "/#about" },
+  { label: "FAQ", href: "/#faq" },
+  { label: "Free audit", href: "/#audit" },
+  { label: "Privacy", href: "/privacy" },
 ];
 
 export default function Footer() {
@@ -15,10 +18,10 @@ export default function Footer() {
       <div className="mx-auto max-w-[1240px] px-5 pt-16 pb-10 sm:px-8">
         <div className="flex flex-col justify-between gap-12 md:flex-row">
           <div className="max-w-sm">
-            <a href="#top" className="flex items-center gap-2.5">
+            <Link href="/#top" className="flex items-center gap-2.5">
               <Logo className="h-9" />
               <span className="font-display text-2xl font-extrabold tracking-[0.04em] uppercase">Alpaca Digital</span>
-            </a>
+            </Link>
             <p className="mt-4 leading-relaxed text-on-band-2">
               Websites, local SEO, and Google Business Profiles for businesses in and around {site.city}.
             </p>
@@ -29,9 +32,9 @@ export default function Footer() {
               <ul className="grid gap-2.5">
                 {links.map((l) => (
                   <li key={l.href}>
-                    <a href={l.href} className="text-on-band-2 transition-colors hover:text-on-band">
+                    <Link href={l.href} className="text-on-band-2 transition-colors hover:text-on-band">
                       {l.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

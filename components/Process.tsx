@@ -52,7 +52,7 @@ export default function Process() {
             href="#audit"
             className="inline-flex items-center gap-2 rounded-full bg-route px-7 py-4 font-bold text-route-ink transition-transform duration-300 ease-settle hover:-translate-y-0.5"
           >
-            Start with the free audit
+            Get my free visibility audit
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
               <path d="M5 12h14M13 6l6 6-6 6" />
             </svg>

@@ -140,20 +140,25 @@ function Searchers({ ranksRef }: { ranksRef: RefObject<Record<string, number>> }
       ).onfinish = () => c.remove();
     };
 
-    const now0 = performance.now();
-    const dots: Dot[] = Array.from({ length: 14 }, () => {
-      const el = document.createElementNS(NS, "circle");
-      el.setAttribute("r", "5");
-      el.setAttribute("fill", "var(--ink-2)");
-      el.setAttribute("stroke", "var(--paper)");
-      el.setAttribute("stroke-width", "2");
-      el.setAttribute("opacity", "0");
-      g.appendChild(el);
-      return spawn(el, now0);
-    });
+    // Dots start once the page has loaded so they never compete with first paint.
+    let dots: Dot[] = [];
+    const makeDots = () => {
+      const now0 = performance.now();
+      dots = Array.from({ length: innerWidth < 1024 ? 8 : 14 }, () => {
+        const el = document.createElementNS(NS, "circle");
+        el.setAttribute("r", "5");
+        el.setAttribute("fill", "var(--ink-2)");
+        el.setAttribute("stroke", "var(--paper)");
+        el.setAttribute("stroke-width", "2");
+        el.setAttribute("opacity", "0");
+        g.appendChild(el);
+        return spawn(el, now0);
+      });
+    };
 
     let raf = 0;
     let visible = true;
+    let ready = false;
     const frame = (now: number) => {
       for (let i = 0; i < dots.length; i++) {
         const d = dots[i];
@@ -175,8 +180,18 @@ function Searchers({ ranksRef }: { ranksRef: RefObject<Record<string, number>> }
     };
     const start = () => {
       cancelAnimationFrame(raf);
-      if (visible && document.visibilityState === "visible") raf = requestAnimationFrame(frame);
+      if (ready && visible && document.visibilityState === "visible") raf = requestAnimationFrame(frame);
     };
+    let delay: ReturnType<typeof setTimeout>;
+    const begin = () => {
+      delay = setTimeout(() => {
+        makeDots();
+        ready = true;
+        start();
+      }, 1200);
+    };
+    if (document.readyState === "complete") begin();
+    else addEventListener("load", begin, { once: true });
     const io = new IntersectionObserver(([entry]) => {
       visible = entry.isIntersecting;
       start();
@@ -186,6 +201,8 @@ function Searchers({ ranksRef }: { ranksRef: RefObject<Record<string, number>> }
     start();
     return () => {
       cancelAnimationFrame(raf);
+      clearTimeout(delay);
+      removeEventListener("load", begin);
       io.disconnect();
       document.removeEventListener("visibilitychange", start);
       dots.forEach((d) => d.el.remove());
