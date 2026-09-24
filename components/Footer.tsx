@@ -1,96 +1,65 @@
-export default function Footer() {
-  const year = new Date().getFullYear();
+import Logo from "@/components/Logo";
+import { site, telHref } from "@/lib/site";
 
+const links = [
+  { label: "Services", href: "#services" },
+  { label: "Results", href: "#results" },
+  { label: "Work", href: "#work" },
+  { label: "About", href: "#about" },
+  { label: "Free audit", href: "#audit" },
+];
+
+export default function Footer() {
   return (
-    <footer className="bg-slate-900 dark:bg-slate-950 text-white py-16 px-6 border-t border-slate-800">
-      <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between gap-10 mb-12">
-          {/* Brand */}
-          <div className="max-w-xs">
-            <div className="flex items-center gap-2.5 mb-3">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/alpaca-logo.svg" alt="Alpaca Digital" width={32} height={32} className="shrink-0" />
-              <p className="text-xl font-bold tracking-tight">
-                Alpaca<span className="text-indigo-400">Digital</span>
-              </p>
-            </div>
-            <p className="text-sm text-slate-400 leading-relaxed">
-              Boutique web design &amp; development for local businesses that want
-              to stand out online.
+    <footer className="dark bg-band text-on-band">
+      <div className="mx-auto max-w-[1240px] px-5 pt-16 pb-10 sm:px-8">
+        <div className="flex flex-col justify-between gap-12 md:flex-row">
+          <div className="max-w-sm">
+            <a href="#top" className="flex items-center gap-2.5">
+              <Logo className="size-9" />
+              <span className="font-display text-2xl font-extrabold tracking-[0.04em] uppercase">Alpaca Digital</span>
+            </a>
+            <p className="mt-4 leading-relaxed text-on-band-2">
+              Websites, local SEO, and Google Business Profiles for businesses in and around {site.city}.
             </p>
           </div>
 
-          {/* Links */}
-          <div className="flex flex-wrap gap-12">
-            <div>
-              <p className="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-4">
-                Quick Links
-              </p>
-              <ul className="space-y-2.5">
-                {["Services", "Work", "About", "Contact"].map((item) => (
-                  <li key={item}>
-                    <a
-                      href={`#${item.toLowerCase()}`}
-                      className="text-sm text-slate-400 hover:text-white transition-colors"
-                    >
-                      {item}
+          <div className="flex flex-wrap gap-x-16 gap-y-10">
+            <nav aria-label="Footer">
+              <ul className="grid gap-2.5">
+                {links.map((l) => (
+                  <li key={l.href}>
+                    <a href={l.href} className="text-on-band-2 transition-colors hover:text-on-band">
+                      {l.label}
                     </a>
                   </li>
                 ))}
               </ul>
-            </div>
-
-            <div>
-              <p className="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-4">
-                Industries
-              </p>
-              <ul className="space-y-2.5">
-                {[
-                  "Healthcare",
-                  "Restaurants",
-                  "Contractors",
-                  "Non-Profits",
-                  "Local Business",
-                ].map((item) => (
-                  <li key={item}>
-                    <span className="text-sm text-slate-400">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <p className="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-4">
-                Contact
-              </p>
-              <ul className="space-y-2.5">
+            </nav>
+            <ul className="grid content-start gap-2.5">
+              <li>
+                <a href={`mailto:${site.email}`} className="text-on-band-2 transition-colors hover:text-on-band">
+                  {site.email}
+                </a>
+              </li>
+              {site.phone && (
                 <li>
-                  <a
-                    href="mailto:hello@alpacadigital.co"
-                    className="text-sm text-slate-400 hover:text-white transition-colors"
-                  >
-                    hello@alpacadigital.co
+                  <a href={telHref(site.phone)} className="text-on-band-2 transition-colors hover:text-on-band">
+                    {site.phone}
                   </a>
                 </li>
-                <li>
-                  <span className="text-sm text-slate-400">Rochester, MN</span>
-                </li>
-              </ul>
-            </div>
+              )}
+              <li className="text-on-band-2">{site.city}</li>
+            </ul>
           </div>
         </div>
 
-        {/* Bottom bar */}
-        <div className="border-t border-slate-800 pt-8 flex flex-col sm:flex-row justify-between gap-4 items-center">
-          <p className="text-xs text-slate-500">
-            © {year} Alpaca Digital. All rights reserved.
+        <div className="mt-14 flex flex-col justify-between gap-3 border-t border-band-rule pt-6 text-sm text-on-band-2 sm:flex-row">
+          <p>
+            © {new Date().getFullYear()} Alpaca Digital<span className="mx-1.5">·</span>
+            {site.owner}
           </p>
-          <a
-            href="#contact"
-            className="text-xs text-indigo-400 hover:text-indigo-300 transition-colors font-medium"
-          >
-            Start a project →
-          </a>
+          <p className="tabular">44.02° N, 92.47° W</p>
         </div>
       </div>
     </footer>

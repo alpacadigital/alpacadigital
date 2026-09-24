@@ -1,146 +1,113 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useSyncExternalStore } from "react";
 import { useTheme } from "next-themes";
-import Image from "next/image";
+import Logo from "@/components/Logo";
 
 const links = [
   { label: "Services", href: "#services" },
-  { label: "Work", href: "#portfolio" },
+  { label: "Results", href: "#results" },
+  { label: "Work", href: "#work" },
   { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
 ];
 
-export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+function ThemeToggle() {
+  const mounted = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false,
+  );
+  const { resolvedTheme, setTheme } = useTheme();
+  const night = mounted && resolvedTheme === "dark";
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-white/95 dark:bg-slate-950/95 backdrop-blur-sm shadow-sm dark:shadow-slate-900"
-          : "bg-transparent"
-      }`}
+    <button
+      type="button"
+      onClick={() => setTheme(night ? "light" : "dark")}
+      className="grid size-10 place-items-center rounded-full text-ink-2 transition-colors hover:bg-land hover:text-ink"
+      aria-label={night ? "Switch to day map" : "Switch to night map"}
     >
-      <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Logo */}
-        <a href="#" className="flex items-center gap-2.5 group">
-          <Image
-            src="/alpaca-logo.svg"
-            alt="Alpaca Digital"
-            width={36}
-            height={36}
-            className="shrink-0"
-          />
-          <span className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
-            Alpaca<span className="text-indigo-600 dark:text-indigo-400">Digital</span>
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        {night ? (
+          <>
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M6.3 17.7l-1.4 1.4M19.1 4.9l-1.4 1.4" />
+          </>
+        ) : (
+          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+        )}
+      </svg>
+    </button>
+  );
+}
+
+export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <header className="fixed inset-x-3 top-3 z-50 mx-auto max-w-[1552px] lg:inset-x-6">
+      <nav className="panel flex h-15 items-center justify-between rounded-full bg-paper/95 pr-2 pl-4 backdrop-blur-md lg:pl-5">
+        <a href="#top" className="flex items-center gap-2" aria-label="Alpaca Digital, back to top">
+          <Logo className="size-8" />
+          <span className="font-display text-[1.35rem] font-extrabold tracking-[0.04em] text-ink uppercase">
+            Alpaca Digital
           </span>
         </a>
 
-        {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden items-center gap-1 md:flex">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
+              className="rounded-full px-4 py-2 text-[0.95rem] font-semibold text-ink-2 transition-colors hover:bg-land hover:text-ink"
             >
               {link.label}
             </a>
           ))}
-          {/* Theme toggle */}
-          {mounted && (
-            <button
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="p-2 rounded-lg text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-              aria-label="Toggle dark mode"
-            >
-              {theme === "dark" ? (
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
-              ) : (
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
-              )}
-            </button>
-          )}
+          <ThemeToggle />
           <a
-            href="#contact"
-            className="ml-2 px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 transition-colors"
+            href="#audit"
+            className="ml-1 rounded-full bg-route px-5 py-2.5 text-[0.95rem] font-bold text-route-ink transition-transform duration-300 ease-settle hover:-translate-y-px"
           >
-            Get a Quote
+            Free audit
           </a>
         </div>
 
-        {/* Mobile hamburger */}
-        <div className="md:hidden flex items-center gap-2">
-          {mounted && (
-            <button
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="p-2 rounded-lg text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-              aria-label="Toggle dark mode"
-            >
-              {theme === "dark" ? (
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
-              ) : (
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
-              )}
-            </button>
-          )}
+        <div className="flex items-center gap-1 md:hidden">
+          <ThemeToggle />
           <button
-            className="flex flex-col gap-1.5 p-1"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu"
+            type="button"
+            onClick={() => setOpen(!open)}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
+            aria-label={open ? "Close menu" : "Open menu"}
+            className="grid size-11 place-items-center rounded-full text-ink hover:bg-land"
           >
-            <span
-              className={`block w-6 h-0.5 bg-slate-900 dark:bg-white transition-all duration-300 ${
-                menuOpen ? "rotate-45 translate-y-2" : ""
-              }`}
-            />
-            <span
-              className={`block w-6 h-0.5 bg-slate-900 dark:bg-white transition-all duration-300 ${
-                menuOpen ? "opacity-0" : ""
-              }`}
-            />
-            <span
-              className={`block w-6 h-0.5 bg-slate-900 dark:bg-white transition-all duration-300 ${
-                menuOpen ? "-rotate-45 -translate-y-2" : ""
-              }`}
-            />
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" aria-hidden="true">
+              {open ? <path d="M6 6l12 12M18 6 6 18" /> : <path d="M4 7h16M4 12h16M4 17h16" />}
+            </svg>
           </button>
         </div>
       </nav>
 
-      {/* Mobile menu */}
-      {menuOpen && (
-        <div className="md:hidden bg-white dark:bg-slate-950 border-t border-slate-100 dark:border-slate-800 px-6 py-4 flex flex-col gap-4">
+      {open && (
+        <div id="mobile-menu" className="panel mt-2 flex flex-col gap-1 rounded-3xl bg-paper p-3 md:hidden">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              onClick={() => setMenuOpen(false)}
-              className="text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white"
+              onClick={() => setOpen(false)}
+              className="rounded-2xl px-4 py-3 text-lg font-semibold text-ink hover:bg-land"
             >
               {link.label}
             </a>
           ))}
           <a
-            href="#contact"
-            onClick={() => setMenuOpen(false)}
-            className="px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-lg text-center hover:bg-indigo-700 transition-colors"
+            href="#audit"
+            onClick={() => setOpen(false)}
+            className="mt-1 rounded-full bg-route px-5 py-3.5 text-center text-lg font-bold text-route-ink"
           >
-            Get a Quote
+            Get my free audit
           </a>
         </div>
       )}

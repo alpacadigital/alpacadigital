@@ -1,0 +1,717 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-24T13:56:32+00:00",
+  "title": "Design System: Alpaca Digital",
+  "extensions": {
+    "colorMeta": {
+      "route": {
+        "role": "primary",
+        "displayName": "Route Ultramarine",
+        "canonical": "#3b2ef0",
+        "tonalRamp": [
+          "#0a0547",
+          "#11097c",
+          "#180db0",
+          "#1f10e4",
+          "#483cf1",
+          "#7970f5",
+          "#b3aef9",
+          "#e9e7fd"
+        ]
+      },
+      "route-ink": {
+        "role": "primary",
+        "displayName": "Route Ink",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#262626",
+          "#424242",
+          "#5e5e5e",
+          "#7a7a7a",
+          "#969696",
+          "#b2b2b2",
+          "#d4d4d4",
+          "#f2f2f2"
+        ]
+      },
+      "route-soft": {
+        "role": "primary",
+        "displayName": "Route Wash",
+        "canonical": "#e4e2fd",
+        "tonalRamp": [
+          "#0a0548",
+          "#11097c",
+          "#180cb1",
+          "#2010e5",
+          "#493bf2",
+          "#7a70f5",
+          "#b3aef9",
+          "#e9e7fd"
+        ]
+      },
+      "land": {
+        "role": "neutral",
+        "displayName": "Land",
+        "canonical": "#e6ebe2",
+        "tonalRamp": [
+          "#252d1f",
+          "#414e36",
+          "#5c704d",
+          "#789164",
+          "#94aa83",
+          "#b1c1a4",
+          "#d3dccc",
+          "#f2f5f0"
+        ]
+      },
+      "land-deep": {
+        "role": "neutral",
+        "displayName": "Land Deep",
+        "canonical": "#d9e0d4",
+        "tonalRamp": [
+          "#252c20",
+          "#414d38",
+          "#5c6e4f",
+          "#778e67",
+          "#94a785",
+          "#b0bfa6",
+          "#d2dbcd",
+          "#f2f4f0"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#262626",
+          "#424242",
+          "#5e5e5e",
+          "#7a7a7a",
+          "#969696",
+          "#b2b2b2",
+          "#d4d4d4",
+          "#f2f2f2"
+        ]
+      },
+      "street": {
+        "role": "neutral",
+        "displayName": "Street",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#262626",
+          "#424242",
+          "#5e5e5e",
+          "#7a7a7a",
+          "#969696",
+          "#b2b2b2",
+          "#d4d4d4",
+          "#f2f2f2"
+        ]
+      },
+      "casing": {
+        "role": "neutral",
+        "displayName": "Casing",
+        "canonical": "#c9d2c6",
+        "tonalRamp": [
+          "#242b22",
+          "#3e4a3b",
+          "#596953",
+          "#73896c",
+          "#90a38a",
+          "#aebbaa",
+          "#d1d9cf",
+          "#f2f4f1"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "canonical": "#c9d2c6",
+        "tonalRamp": [
+          "#242b22",
+          "#3e4a3b",
+          "#596953",
+          "#73896c",
+          "#90a38a",
+          "#aebbaa",
+          "#d1d9cf",
+          "#f2f4f1"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#13201b",
+        "tonalRamp": [
+          "#1c3028",
+          "#315346",
+          "#467664",
+          "#5b9a82",
+          "#7cb19d",
+          "#9fc6b7",
+          "#c9dfd6",
+          "#eff5f3"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink 2",
+        "canonical": "#45544d",
+        "tonalRamp": [
+          "#222a26",
+          "#3c4943",
+          "#55685f",
+          "#6e867b",
+          "#8ca197",
+          "#abbab3",
+          "#cfd8d4",
+          "#f1f4f2"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink 3",
+        "canonical": "#66756e",
+        "tonalRamp": [
+          "#242926",
+          "#3e4743",
+          "#58655f",
+          "#72837b",
+          "#8f9e97",
+          "#adb8b3",
+          "#d1d7d4",
+          "#f1f3f2"
+        ]
+      },
+      "highway": {
+        "role": "secondary",
+        "displayName": "Highway Amber",
+        "canonical": "#f2b33d",
+        "tonalRamp": [
+          "#483005",
+          "#7c5408",
+          "#b1770c",
+          "#e59b0f",
+          "#f2b23b",
+          "#f5c770",
+          "#fadfae",
+          "#fdf6e7"
+        ]
+      },
+      "highway-casing": {
+        "role": "secondary",
+        "displayName": "Highway Casing",
+        "canonical": "#d2921c",
+        "tonalRamp": [
+          "#442f09",
+          "#755110",
+          "#a67416",
+          "#d8961d",
+          "#e6ae46",
+          "#edc478",
+          "#f5ddb2",
+          "#fcf5e9"
+        ]
+      },
+      "park": {
+        "role": "secondary",
+        "displayName": "Park Green",
+        "canonical": "#c3dcae",
+        "tonalRamp": [
+          "#253517",
+          "#405d28",
+          "#5b8439",
+          "#76ab4a",
+          "#93c06d",
+          "#b0d194",
+          "#d2e5c2",
+          "#f2f7ed"
+        ]
+      },
+      "park-ink": {
+        "role": "secondary",
+        "displayName": "Park Ink",
+        "canonical": "#3f6b2e",
+        "tonalRamp": [
+          "#203517",
+          "#375d28",
+          "#4e8439",
+          "#65ab4a",
+          "#84c06d",
+          "#a5d194",
+          "#cce5c2",
+          "#f0f7ed"
+        ]
+      },
+      "water": {
+        "role": "secondary",
+        "displayName": "River Teal",
+        "canonical": "#a7d3db",
+        "tonalRamp": [
+          "#163136",
+          "#26565e",
+          "#377a86",
+          "#479eae",
+          "#6bb5c2",
+          "#92c9d3",
+          "#c1e0e6",
+          "#edf6f8"
+        ]
+      },
+      "water-ink": {
+        "role": "secondary",
+        "displayName": "Water Ink",
+        "canonical": "#2a6f7a",
+        "tonalRamp": [
+          "#143439",
+          "#225a63",
+          "#30808c",
+          "#3fa6b6",
+          "#63bbc9",
+          "#8dced8",
+          "#bfe3e9",
+          "#ecf7f8"
+        ]
+      },
+      "band": {
+        "role": "neutral",
+        "displayName": "Band",
+        "canonical": "#13201b",
+        "tonalRamp": [
+          "#1c3028",
+          "#315346",
+          "#467664",
+          "#5b9a82",
+          "#7cb19d",
+          "#9fc6b7",
+          "#c9dfd6",
+          "#eff5f3"
+        ]
+      },
+      "on-band": {
+        "role": "neutral",
+        "displayName": "On Band",
+        "canonical": "#e4ece7",
+        "tonalRamp": [
+          "#202d25",
+          "#374e3f",
+          "#4e6f5a",
+          "#659075",
+          "#84a992",
+          "#a5c0af",
+          "#ccdbd2",
+          "#f0f4f2"
+        ]
+      },
+      "on-band-2": {
+        "role": "neutral",
+        "displayName": "On Band 2",
+        "canonical": "#a9b8b1",
+        "tonalRamp": [
+          "#232a26",
+          "#3c4943",
+          "#55675f",
+          "#6f867b",
+          "#8ca097",
+          "#abbab3",
+          "#d0d8d4",
+          "#f1f3f2"
+        ]
+      },
+      "band-rule": {
+        "role": "neutral",
+        "displayName": "Band Rule",
+        "canonical": "#2c3b35",
+        "tonalRamp": [
+          "#212c27",
+          "#394c44",
+          "#516c61",
+          "#698c7e",
+          "#87a699",
+          "#a7beb5",
+          "#cddad5",
+          "#f0f4f3"
+        ]
+      },
+      "up": {
+        "role": "tertiary",
+        "displayName": "Signal Green",
+        "canonical": "#8fd16f",
+        "tonalRamp": [
+          "#1f3a13",
+          "#366420",
+          "#4d8f2e",
+          "#64ba3b",
+          "#84cc61",
+          "#a5da8b",
+          "#cceabd",
+          "#f0f9ec"
+        ]
+      },
+      "route-night": {
+        "role": "primary",
+        "displayName": "Route Ultramarine (night)",
+        "canonical": "#8c83ff",
+        "tonalRamp": [
+          "#06004c",
+          "#0a0085",
+          "#0e00bd",
+          "#1200f5",
+          "#3d2eff",
+          "#7166ff",
+          "#afa8ff",
+          "#e7e5ff"
+        ]
+      },
+      "route-ink-night": {
+        "role": "primary",
+        "displayName": "Route Ink (night)",
+        "canonical": "#0b0a26",
+        "tonalRamp": [
+          "#12103d",
+          "#1e1c69",
+          "#2b2795",
+          "#3833c2",
+          "#5e59d3",
+          "#8986df",
+          "#bcbaed",
+          "#ebebfa"
+        ]
+      },
+      "route-soft-night": {
+        "role": "primary",
+        "displayName": "Route Wash (night)",
+        "canonical": "#221f4d",
+        "tonalRamp": [
+          "#181637",
+          "#2a265f",
+          "#3b3687",
+          "#4d46af",
+          "#706ac3",
+          "#9692d3",
+          "#c4c1e6",
+          "#eeedf8"
+        ]
+      },
+      "land-night": {
+        "role": "neutral",
+        "displayName": "Land (night)",
+        "canonical": "#0e1714",
+        "tonalRamp": [
+          "#1d3029",
+          "#325248",
+          "#477566",
+          "#5d9884",
+          "#7db09f",
+          "#a0c5b9",
+          "#c9ded7",
+          "#eff5f3"
+        ]
+      },
+      "paper-night": {
+        "role": "neutral",
+        "displayName": "Paper (night)",
+        "canonical": "#16221e",
+        "tonalRamp": [
+          "#1e2e29",
+          "#345147",
+          "#4a7365",
+          "#609583",
+          "#80ad9e",
+          "#a2c3b8",
+          "#caddd7",
+          "#f0f5f3"
+        ]
+      },
+      "street-night": {
+        "role": "neutral",
+        "displayName": "Street (night)",
+        "canonical": "#24322c",
+        "tonalRamp": [
+          "#202c27",
+          "#384d44",
+          "#4f6e61",
+          "#668e7d",
+          "#85a799",
+          "#a6bfb4",
+          "#cddbd5",
+          "#f0f4f3"
+        ]
+      },
+      "rule-night": {
+        "role": "neutral",
+        "displayName": "Rule (night)",
+        "canonical": "#2a3833",
+        "tonalRamp": [
+          "#212c28",
+          "#394c45",
+          "#516c62",
+          "#698c7f",
+          "#88a59b",
+          "#a8bdb6",
+          "#cddad5",
+          "#f0f4f3"
+        ]
+      },
+      "ink-night": {
+        "role": "neutral",
+        "displayName": "Ink (night)",
+        "canonical": "#e4ece7",
+        "tonalRamp": [
+          "#202d25",
+          "#374e3f",
+          "#4e6f5a",
+          "#659075",
+          "#84a992",
+          "#a5c0af",
+          "#ccdbd2",
+          "#f0f4f2"
+        ]
+      },
+      "ink-2-night": {
+        "role": "neutral",
+        "displayName": "Ink 2 (night)",
+        "canonical": "#a9b8b1",
+        "tonalRamp": [
+          "#232a26",
+          "#3c4943",
+          "#55675f",
+          "#6f867b",
+          "#8ca097",
+          "#abbab3",
+          "#d0d8d4",
+          "#f1f3f2"
+        ]
+      },
+      "ink-3-night": {
+        "role": "neutral",
+        "displayName": "Ink 3 (night)",
+        "canonical": "#8a9a93",
+        "tonalRamp": [
+          "#232927",
+          "#3d4743",
+          "#57655f",
+          "#71837c",
+          "#8f9e97",
+          "#adb8b3",
+          "#d0d7d4",
+          "#f1f3f2"
+        ]
+      },
+      "band-night": {
+        "role": "neutral",
+        "displayName": "Band (night)",
+        "canonical": "#08100d",
+        "tonalRamp": [
+          "#1a3329",
+          "#2c5848",
+          "#3f7e66",
+          "#52a385",
+          "#74b99f",
+          "#99ccb9",
+          "#c5e2d7",
+          "#eef6f3"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero H1 only; clamp(3.1rem, 11vw, 4.25rem) on phones."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Every section H2."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service names, audit form title, Results total."
+      },
+      "title-text": {
+        "displayName": "Title (text)",
+        "purpose": "Route stop titles, project names, job lines."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default text."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Section intro paragraphs, 30-38rem measure."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Metadata, captions, table headers, chips."
+      },
+      "map-label": {
+        "displayName": "Map label",
+        "purpose": "Street names on the map, haloed in the ground color."
+      }
+    },
+    "shadows": [
+      {
+        "name": "panel-day",
+        "value": "0 1px 2px rgb(19 32 27 / 0.1), 0 14px 36px -12px rgb(19 32 27 / 0.28)",
+        "purpose": "Floating map-UI surfaces (.panel)."
+      },
+      {
+        "name": "panel-night",
+        "value": "0 0 0 1px var(--rule), 0 14px 36px -12px rgb(0 0 0 / 0.6)",
+        "purpose": "Same surfaces on the night map."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-settle",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Pin scaling, row reorder (700ms), route draw (1400ms), button lifts (300ms)."
+      },
+      {
+        "name": "searcher-drift",
+        "value": "2600-4400ms ease-out cubic, 14 dots, weighted by rank",
+        "purpose": "The one motion law; paused offscreen and under reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Route Button",
+      "kind": "button",
+      "refersTo": "button-route",
+      "description": "Every primary action; always a step toward the audit.",
+      "html": "<a class=\"ds-btn-route\" href=\"#audit\">Get my free visibility audit <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-btn-route { font-family: var(--font-overpass), system-ui, sans-serif; display: inline-flex; align-items: center; gap: 8px; background: var(--route, #3b2ef0); color: var(--route-ink, #fff); padding: 16px 28px; border-radius: 9999px; font-size: 1.02rem; font-weight: 700; text-decoration: none; transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-route svg { transition: transform 300ms; } .ds-btn-route:hover { transform: translateY(-2px); } .ds-btn-route:hover svg { transform: translateX(2px); } .ds-btn-route:focus-visible { outline: 3px solid var(--route, #3b2ef0); outline-offset: 3px; }"
+    },
+    {
+      "name": "Text Link Action",
+      "kind": "button",
+      "refersTo": "nav-link",
+      "description": "Secondary action beside a route button.",
+      "html": "<a class=\"ds-link\" href=\"#results\">See real results</a>",
+      "css": ".ds-link { font-family: var(--font-overpass), system-ui, sans-serif; color: var(--ink, #13201b); font-weight: 600; padding: 12px; text-decoration: underline; text-decoration-color: var(--rule, #c9d2c6); text-underline-offset: 4px; text-decoration-thickness: 1px; } .ds-link:hover { text-decoration-color: var(--ink, #13201b); } .ds-link:focus-visible { outline: 3px solid var(--route, #3b2ef0); outline-offset: 3px; border-radius: 6px; }"
+    },
+    {
+      "name": "Audit Input",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Form field on paper; border turns route on focus.",
+      "html": "<label class=\"ds-label\" for=\"ds-n\">Website</label><input class=\"ds-input\" id=\"ds-n\" placeholder=\"yourbusiness.com\">",
+      "css": ".ds-label { font-family: var(--font-overpass), system-ui, sans-serif; display: block; margin-bottom: 8px; font-size: 0.95rem; font-weight: 700; color: var(--ink, #13201b); } .ds-input { font-family: var(--font-overpass), system-ui, sans-serif; width: 100%; background: var(--paper, #fff); color: var(--ink, #13201b); border: 2px solid var(--rule, #c9d2c6); border-radius: 12px; padding: 14px 16px; font-size: 1.02rem; transition: border-color 150ms; } .ds-input::placeholder { color: var(--ink-3, #66756e); } .ds-input:hover { border-color: var(--ink-3, #66756e); } .ds-input:focus { outline: none; border-color: var(--route, #3b2ef0); }"
+    },
+    {
+      "name": "Floating Navbar",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Floating pill panel with wordmark, pill links, and compact route button.",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-nav-mark\">Alpaca Digital</span><span class=\"ds-nav-links\"><a href=\"#\">Services</a><a href=\"#\">Results</a><a href=\"#\">Work</a><a class=\"ds-nav-cta\" href=\"#\">Free audit</a></span></nav>",
+      "css": ".ds-nav { font-family: var(--font-overpass), system-ui, sans-serif; display: flex; align-items: center; justify-content: space-between; height: 60px; padding: 0 8px 0 20px; background: color-mix(in srgb, var(--paper, #fff) 95%, transparent); backdrop-filter: blur(12px); border-radius: 9999px; box-shadow: 0 1px 2px rgb(19 32 27 / 0.1), 0 14px 36px -12px rgb(19 32 27 / 0.28); } .ds-nav-mark { font-family: var(--font-big-shoulders), 'Arial Narrow', sans-serif; font-size: 1.35rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink, #13201b); } .ds-nav-links { display: flex; gap: 4px; align-items: center; } .ds-nav-links a { padding: 8px 16px; border-radius: 9999px; font-size: 0.95rem; font-weight: 600; color: var(--ink-2, #45544d); text-decoration: none; transition: background 150ms, color 150ms; } .ds-nav-links a:hover { background: var(--land, #e6ebe2); color: var(--ink, #13201b); } .ds-nav-links a.ds-nav-cta { background: var(--route, #3b2ef0); color: var(--route-ink, #fff); font-weight: 700; padding: 10px 20px; transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-nav-links a.ds-nav-cta:hover { transform: translateY(-1px); } .ds-nav a:focus-visible { outline: 3px solid var(--route, #3b2ef0); outline-offset: 3px; }"
+    },
+    {
+      "name": "Buried/Found Switch",
+      "kind": "chip",
+      "refersTo": "rank-badge-you",
+      "description": "The one control that flips the whole map.",
+      "html": "<div class=\"ds-switch\" role=\"group\" aria-label=\"Show your business as\"><button type=\"button\" aria-pressed=\"false\">Buried</button><button type=\"button\" aria-pressed=\"true\" class=\"on\">Found</button></div>",
+      "css": ".ds-switch { font-family: var(--font-overpass), system-ui, sans-serif; display: inline-flex; padding: 4px; border-radius: 9999px; background: var(--land, #e6ebe2); font-size: 0.875rem; font-weight: 600; } .ds-switch button { font: inherit; border: 0; background: none; padding: 4px 12px; border-radius: 9999px; color: var(--ink-2, #45544d); cursor: pointer; transition: background 300ms, color 300ms; } .ds-switch button:hover { color: var(--ink, #13201b); } .ds-switch button.on { background: var(--route, #3b2ef0); color: var(--route-ink, #fff); } .ds-switch button:focus-visible { outline: 3px solid var(--route, #3b2ef0); outline-offset: 3px; }"
+    },
+    {
+      "name": "Rank Badges",
+      "kind": "custom",
+      "refersTo": "rank-badge-solid",
+      "description": "Rank by form: solid 1-3, outlined 4-8, dashed 9+; route for your business.",
+      "html": "<div class=\"ds-ranks\"><span class=\"ds-rank ds-you\">1</span><span class=\"ds-rank ds-solid\">2</span><span class=\"ds-rank ds-outline\">5</span><span class=\"ds-rank ds-dashed\">9</span></div>",
+      "css": ".ds-ranks { display: flex; gap: 12px; } .ds-rank { font-family: var(--font-overpass), system-ui, sans-serif; display: grid; place-items: center; width: 36px; height: 36px; box-sizing: border-box; border-radius: 9999px; font-size: 0.875rem; font-weight: 700; font-variant-numeric: tabular-nums; } .ds-solid { background: var(--ink, #13201b); color: var(--paper, #fff); } .ds-you { background: var(--route, #3b2ef0); color: var(--route-ink, #fff); } .ds-outline { border: 2px solid var(--ink-2, #45544d); color: var(--ink-2, #45544d); } .ds-dashed { border: 2px dashed var(--ink-2, #45544d); color: var(--ink-2, #45544d); }"
+    },
+    {
+      "name": "Floating Panel Card",
+      "kind": "card",
+      "refersTo": "panel-card",
+      "description": "Map-UI panel: paper, 16px corners, the one floating shadow.",
+      "html": "<figure class=\"ds-panel\"><div class=\"ds-panel-bar\">drywall contractor near me</div><div class=\"ds-panel-row\"><strong>Your business</strong><span>Top of the map · Open now</span></div></figure>",
+      "css": ".ds-panel { font-family: var(--font-overpass), system-ui, sans-serif; margin: 0; width: 320px; background: var(--paper, #fff); border-radius: 16px; overflow: hidden; box-shadow: 0 1px 2px rgb(19 32 27 / 0.1), 0 14px 36px -12px rgb(19 32 27 / 0.28); } .ds-panel-bar { padding: 14px 16px; border-bottom: 1px solid var(--rule, #c9d2c6); color: var(--ink, #13201b); } .ds-panel-row { margin: 8px; padding: 10px 8px; border-radius: 12px; background: var(--route-soft, #e4e2fd); display: grid; } .ds-panel-row strong { color: var(--route, #3b2ef0); } .ds-panel-row span { font-size: 0.875rem; color: var(--ink-2, #45544d); }"
+    },
+    {
+      "name": "Section Headline",
+      "kind": "custom",
+      "refersTo": "headline",
+      "description": "Big Shoulders extra-bold caps H2.",
+      "html": "<h2 class=\"ds-h2\">Three things decide who gets the call.</h2>",
+      "css": ".ds-h2 { font-family: var(--font-big-shoulders), 'Arial Narrow', sans-serif; margin: 0; max-width: 18ch; font-size: clamp(2.6rem, 6vw, 4.4rem); line-height: 0.95; font-weight: 800; text-transform: uppercase; color: var(--ink, #13201b); text-wrap: balance; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Local Search Map",
+    "overview": "The whole site is a street map of Rochester, MN, drawn the way a navigation app draws a city: pale green-gray land, white streets with gray casing, amber highways, park green, river teal with italic water labels, and green-black ink. Interface pieces behave like map UI floating over that ground: a results sheet, a docked results panel, place cards, a legend, pins. The one ultramarine ink on the page is the route to the customer, and nothing else wears it for decoration.\n\nDensity is calm and generous, built for older owners reading on phones: large body type (17px), 44px tap targets, long line-heights, and sections that breathe (96px on phones, 144px on desktop). Headlines are civic and loud (Big Shoulders, extra-bold, all caps); everything else is quiet highway-sign text (Overpass). A night map replaces the day map in dark mode with the same roles, not a new palette.\n\nRank is always shown by pin form, never by color: solid for the top three, outlined for the rest of page one, dashed for buried. Numbers appear only where sequence is information: ranks and route stops.",
+    "keyCharacteristics": [
+      "Map-as-ground: the land, street, park and water colors are the neutrals.",
+      "One reserved ultramarine for the route to the customer (your pin, route lines, audit calls to action, the audit section).",
+      "Rank by pin form: solid, outlined, dashed.",
+      "Floating map-UI panels are the only lifted surfaces.",
+      "Big Shoulders caps for headings, Overpass for everything read.",
+      "A dark band carries proof (Results) and closes the page (footer)."
+    ],
+    "rules": [
+      {
+        "name": "The Reserved Route Rule",
+        "body": "Ultramarine means \"the way to the customer.\" It goes on your pin, route lines, route stops, audit calls to action, and the audit section, plus focus, selection, and the search caret. Competitor pins, headings, links, icons, and decoration never use it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Map Material Rule",
+        "body": "Highway amber, park green, and river teal live inside map drawings and map symbols. They never become button, text, or section colors.",
+        "section": "colors"
+      },
+      {
+        "name": "The Band Rule",
+        "body": "The dark band is for the proof table and the footer. Positive-change green appears only on it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Civic Caps Rule",
+        "body": "Big Shoulders is set extra-bold and uppercase, for H1, H2, service titles, the wordmark (0.04em tracking), and the one hero figure. It never sets running text.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Figures Rule",
+        "body": "Ranks, route stop numbers, clicks, changes, highway shields, and coordinates use tabular figures.",
+        "section": "typography"
+      },
+      {
+        "name": "The Floating Panel Rule",
+        "body": "Only surfaces that float like map UI get a shadow, and they all get the same one. Section blocks, rows, and legends stay flat and use rules or tone.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep route ultramarine (#3B2EF0 day, #8C83FF night) for the route to the customer: your pin, route lines and stops, audit calls to action, the audit section, and focus and selection.",
+      "Do show rank by pin form: solid for 1 to 3, outlined for 4 to 8, dashed for 9 and below.",
+      "Do give every floating map-UI surface the one floating panel shadow, and nothing else.",
+      "Do set H1, H2, and service titles in Big Shoulders extra-bold caps, and everything read in Overpass at 17px or larger.",
+      "Do use tabular figures for ranks, stops, and metrics, and number things only where order is information.",
+      "Do define every new color in both the day map (`:root`) and the night map (`.dark`)."
+    ],
+    "donts": [
+      "Don't use route ink on competitor pins, headings, plain links, icons, or decoration.",
+      "Don't show rank with color alone; the form has to carry it.",
+      "Don't take highway amber, park green, or river teal outside map drawings and map symbols.",
+      "Don't add shadows to section blocks, list rows, or static legends.",
+      "Don't set running text in Big Shoulders or set Big Shoulders in lowercase.",
+      "Don't use signal green off the dark band."
+    ]
+  }
+}
