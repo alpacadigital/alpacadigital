@@ -48,7 +48,7 @@ export default function Navbar() {
     <header className="fixed inset-x-3 top-3 z-50 mx-auto max-w-[1552px] lg:inset-x-6">
       <nav className="panel flex h-15 items-center justify-between rounded-full bg-paper/95 pr-2 pl-4 backdrop-blur-md lg:pl-5">
         <a href="#top" className="flex items-center gap-2" aria-label="Alpaca Digital, back to top">
-          <Logo className="size-8" />
+          <Logo className="h-8" />
           <span className="font-display text-[1.35rem] font-extrabold tracking-[0.04em] text-ink uppercase">
             Alpaca Digital
           </span>

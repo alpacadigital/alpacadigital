@@ -7,6 +7,7 @@ const projects = [
   {
     name: "Exclusive Drywall Company",
     category: "Contractor",
+    client: true,
     description:
       "A story-driven site for a family-owned drywall business, with a project gallery and a free estimate form. Now getting found for local drywall searches.",
     url: "https://www.exclusivedrywallcompany.com/",
@@ -16,7 +17,7 @@ const projects = [
     name: "Rochester Family Eye Clinic",
     category: "Eye care",
     description:
-      "A full site for a 30-year Rochester optometry practice: services, doctor bios, insurance info, and an appointment request form.",
+      "A concept site for a 30-year Rochester optometry practice: services, doctor bios, insurance info, and an appointment request form.",
     url: "https://rochester-family-eye-clinic.vercel.app/",
     screenshot: "/rochester-family-eye-clinic.vercel.app_.png",
   },
@@ -24,7 +25,7 @@ const projects = [
     name: "12th Street Dental",
     category: "Dental",
     description:
-      "A polished dental practice site with before-and-after galleries, service pages, Google reviews, and a new patient flow.",
+      "A concept site for a dental practice, with before-and-after galleries, service pages, Google reviews, and a new patient flow.",
     url: "https://12streetdental.alpacadigital.co/",
     screenshot: "/12streetdental.alpacadigital.co_.png",
   },
@@ -32,7 +33,7 @@ const projects = [
     name: "Fat Willy's Bar & Grill",
     category: "Restaurant",
     description:
-      "A lively restaurant site with menu highlights, weekly specials, events, online ordering, and an email signup for promotions.",
+      "A concept site for a bar and grill, with menu highlights, weekly specials, events, online ordering, and an email signup.",
     url: "https://fatwillys.alpacadigital.co/",
     screenshot: "/fatwillys.alpacadigital.co.png",
   },
@@ -40,7 +41,7 @@ const projects = [
     name: "Kiwanis Rochester Day Makers",
     category: "Non-profit",
     description:
-      "A mission-driven site for a local Kiwanis chapter, with an event calendar, impact stats, and membership sign-ups.",
+      "A concept site for a local Kiwanis chapter, with an event calendar, impact stats, and membership sign-ups.",
     url: "https://kiwanis.alpacadigital.co/",
     screenshot: "/kiwanis.alpacadigital.co_.png",
   },
@@ -97,7 +98,8 @@ export default function Work() {
           Built for businesses right here.
         </h2>
         <p className="mt-6 max-w-[34rem] text-lg leading-relaxed text-ink-2">
-          Every one is custom, written for its customers, and built to get found. Pick one to take a look.
+          Exclusive Drywall is a client. The others are concept sites I built for local businesses to show what&apos;s
+          possible. Pick one to take a look.
         </p>
 
         <div className="mt-14 grid gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-14">
@@ -123,7 +125,13 @@ export default function Work() {
                       <span className={`block text-xl leading-tight font-bold transition-colors ${on ? "text-ink" : "text-ink-2"}`}>
                         {p.name}
                       </span>
-                      <span className="text-[0.95rem] text-ink-2">{p.category}</span>
+                      <span className="text-[0.95rem] text-ink-2">
+                        {p.category}
+                        <span aria-hidden="true" className="mr-2 ml-1">
+                          ·
+                        </span>
+                        {"client" in p ? <span className="font-bold text-ink">Client</span> : "Concept site"}
+                      </span>
                     </span>
                   </button>
                   {on && (

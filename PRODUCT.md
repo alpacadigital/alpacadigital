@@ -33,17 +33,17 @@ A local designer who is accountable for the phone ringing, not just the handoff 
 
 ## Brand Commitments
 
-- Name: Alpaca Digital. Existing alpaca logo at `public/alpaca-logo.svg`.
+- Name: Alpaca Digital. Logo is the alpaca head mark at `public/alpaca-mark.png`, tinted with ink on the site.
 - Founder name: Gates Jones (never "Shawn").
 - Voice: first person singular, plain, local, direct. No agency "we".
 - Based in Rochester, MN.
 
 ## Evidence on Hand
 
-- Five live client sites, with screenshots in `public/`: Rochester Family Eye Clinic, 12th Street Dental, Exclusive Drywall Company (exclusivedrywallcompany.com), Fat Willy's Bar & Grill, Kiwanis Rochester Day Makers.
+- One paying client: Exclusive Drywall Company (exclusivedrywallcompany.com). Four concept sites built to show prospects, not sold: Rochester Family Eye Clinic, 12th Street Dental, Fat Willy's Bar & Grill, Kiwanis Rochester Day Makers. Screenshots in `public/`. Never present the concept sites as client work.
 - Google Search Console, Exclusive Drywall, last 28 days: 30 clicks (up 11%), 865 impressions (up 2%). Queries include "drywall rochester mn" (clicks up 200%), and "drywall company", "drywall contractor near me", "drywall finishing near me" (all previously 0 clicks).
 - Google Search Console, 3 months (site to be confirmed as Exclusive Drywall): 85 clicks, 3.03K impressions, 2.8% CTR, average position 7.1.
-- Gates's photo: `public/gates.png`.
+- Gates's photo: `public/gates.png`. Logo mark: `public/alpaca-mark.png` (also on the business card).
 - Client testimonials: requested, not yet received. Never fabricate quotes, reviews, star ratings, or client counts.
 
 ## Product Principles

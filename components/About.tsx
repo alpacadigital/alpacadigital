@@ -58,8 +58,8 @@ export default function About() {
               of it points the same way, more people find you and more of them call.
             </p>
             <p>
-              I keep my client list small on purpose. You won&apos;t get handed off or stuck in a queue, and I
-              don&apos;t disappear after launch.
+              You won&apos;t get handed off or stuck in a queue. You work with me start to finish, and I don&apos;t
+              disappear after launch.
             </p>
           </div>
 

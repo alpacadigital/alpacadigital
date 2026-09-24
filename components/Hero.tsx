@@ -242,7 +242,7 @@ const ROWS: Record<string, { name: string; meta: (rank: number) => string[] }> =
 const ROW_H = 64;
 
 const Sep = () => (
-  <span aria-hidden="true" className="mx-1.5">
+  <span aria-hidden="true" className="mr-2 ml-1">
     ·
   </span>
 );

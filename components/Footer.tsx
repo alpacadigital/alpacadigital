@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="flex flex-col justify-between gap-12 md:flex-row">
           <div className="max-w-sm">
             <a href="#top" className="flex items-center gap-2.5">
-              <Logo className="size-9" />
+              <Logo className="h-9" />
               <span className="font-display text-2xl font-extrabold tracking-[0.04em] uppercase">Alpaca Digital</span>
             </a>
             <p className="mt-4 leading-relaxed text-on-band-2">
@@ -56,7 +56,7 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col justify-between gap-3 border-t border-band-rule pt-6 text-sm text-on-band-2 sm:flex-row">
           <p>
-            © {new Date().getFullYear()} Alpaca Digital<span className="mx-1.5">·</span>
+            © {new Date().getFullYear()} Alpaca Digital<span className="mr-2 ml-1">·</span>
             {site.owner}
           </p>
           <p className="tabular">44.02° N, 92.47° W</p>

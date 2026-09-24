@@ -46,7 +46,6 @@ export const metadata: Metadata = {
     title: "Be the first call when Rochester searches | Alpaca Digital",
     description,
   },
-  icons: { icon: "/alpaca-logo.svg" },
 };
 
 export const viewport: Viewport = {
@@ -64,7 +63,7 @@ const jsonLd = {
   email: site.email,
   ...(site.phone && { telephone: site.phone }),
   image: `${site.url}/gates.png`,
-  logo: `${site.url}/alpaca-logo.svg`,
+  logo: `${site.url}/alpaca-mark.png`,
   description,
   founder: { "@type": "Person", name: site.owner },
   address: {
