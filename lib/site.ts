@@ -4,7 +4,7 @@ export const site = {
   url: "https://alpacadigital.co",
   email: "hello@alpacadigital.co",
   // Display format, e.g. "(507) 555-0123". Leave empty to hide phone links.
-  phone: "",
+  phone: "(507) 322-8385",
   city: "Rochester, MN",
 };
 

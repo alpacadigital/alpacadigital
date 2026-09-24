@@ -16,8 +16,8 @@ export default function Results() {
           </h2>
           <p className="mt-6 max-w-[30rem] text-lg leading-relaxed text-on-band-2">
             Exclusive Drywall Company is a family-owned drywall business in Rochester. These are real numbers from their
-            Google Search Console. Three of these searches sent them zero clicks before. Now each one sends people to
-            their site.
+            Google Search Console. Over the last 3 months they averaged a page-one spot on Google, and three of these
+            searches that sent them zero clicks before now send people to their site.
           </p>
           <a
             href="https://www.exclusivedrywallcompany.com/"
@@ -85,6 +85,25 @@ export default function Results() {
           <p className="mt-6 text-on-band-2">
             They showed up in Google search <span className="font-bold text-on-band tabular">865</span> times in the same
             28 days, <span className="font-bold text-up">up 2%</span>.
+          </p>
+
+          {/* Search Console performance, 3 months (Jun 22 to Sep 21, 2026), confirmed by Gates as Exclusive Drywall. */}
+          <dl className="mt-12 border-t-2 border-on-band">
+            <div className="flex items-baseline justify-between gap-4 border-b border-band-rule py-5">
+              <dt className="text-[1.1rem] font-semibold sm:text-xl">Average spot on Google, last 3 months</dt>
+              <dd className="flex shrink-0 items-baseline gap-3">
+                <span className="font-display text-4xl font-extrabold tabular">7.1</span>
+                <span className="rounded-full bg-up px-2.5 py-0.5 text-sm font-bold text-band">Page one</span>
+              </dd>
+            </div>
+            <div className="flex items-baseline justify-between gap-4 border-b border-band-rule py-5">
+              <dt className="text-[1.1rem] font-semibold sm:text-xl">Clicks from Google, last 3 months</dt>
+              <dd className="font-display text-4xl font-extrabold tabular">85</dd>
+            </div>
+          </dl>
+          <p className="mt-6 text-on-band-2">
+            Over those 3 months they showed up in Google search more than{" "}
+            <span className="font-bold text-on-band tabular">3,000</span> times.
           </p>
         </div>
       </div>
