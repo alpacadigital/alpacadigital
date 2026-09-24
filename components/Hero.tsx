@@ -458,7 +458,7 @@ export default function Hero({ map }: { map: ReactNode }) {
             )}
           </div>
           <p className="mt-4 text-sm text-ink-2">
-            Free and no pressure. I&apos;ll show you where you rank and what&apos;s costing you calls.
+            It&apos;s free. I&apos;ll show you where you rank and what&apos;s costing you calls.
           </p>
         </div>
 

@@ -163,7 +163,7 @@ export default function Audit() {
               >
                 {status === "sending" ? "Sending..." : "Send me my free audit"}
               </button>
-              <p className="text-center text-sm text-ink-2">No spam, no commitment. Just a straight answer.</p>
+              <p className="text-center text-sm text-ink-2">It&apos;s free, and you&apos;re not signing up for anything.</p>
             </form>
           )}
         </div>

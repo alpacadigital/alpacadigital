@@ -41,21 +41,21 @@ const entries = [
     name: "Local SEO",
     job: "Show up when they search.",
     body: "I find out what people around here actually type, then build the pages and fix the technical side so Google knows exactly what you do and where you do it.",
-    handles: "Keyword research, service pages, speed, titles, schema, and business info that matches everywhere online.",
+    handles: "That covers keyword research, service pages, site speed, page titles, schema, and making sure your business info matches everywhere online.",
   },
   {
     Symbol: ProfileSymbol,
     name: "Google Business Profile",
     job: "Get into the map pack.",
-    body: "The map with three businesses at the top of local results is where a lot of calls start. I get your profile complete, accurate, and active so you have a real shot at those spots.",
-    handles: "Setup and cleanup, categories and services, photos, posts, and getting more reviews from happy customers.",
+    body: "The map with three businesses at the top of local results is where a lot of calls start. I fill out and clean up your profile and keep it active, which gives you a real shot at one of those spots.",
+    handles: "I also pick the right categories and services, add photos and posts, and help you get more reviews from happy customers.",
   },
   {
     Symbol: SiteSymbol,
     name: "Your website",
     job: "Turn the visit into a call.",
-    body: "A fast, custom site made for phones, with the words written for you, so visitors can call, book, or ask for a quote in one tap.",
-    handles: "Design, copywriting, mobile-first build, hosting, and updates after launch.",
+    body: "I design a fast site for phones and write the words on it, so visitors can call, book, or ask for a quote in one tap.",
+    handles: "I also handle hosting and keep the site updated after launch.",
   },
 ];
 
@@ -81,8 +81,8 @@ export default function Services() {
             Three things decide who gets the call.
           </h2>
           <p className="mt-6 max-w-[30rem] text-lg leading-relaxed text-ink-2">
-            A good-looking website doesn&apos;t help if nobody finds it. A top spot on the map doesn&apos;t help if the
-            website sends people away. I handle all three, so they work together and your phone rings more.
+            A good-looking website doesn&apos;t help if nobody finds it, and a top spot on the map is wasted if the
+            website sends people away. I handle all three so they work together.
           </p>
           <div className="mt-10 max-w-[30rem] rounded-2xl border border-rule p-5">
             <p className="text-sm font-bold text-ink">Reading the map at the top of this page</p>
@@ -110,16 +110,10 @@ export default function Services() {
                 </h3>
                 <p className="mt-2 text-xl font-bold text-ink">{job}</p>
                 <p className="mt-3 max-w-[38rem] text-[1.05rem] leading-relaxed text-ink-2">{body}</p>
-                <p className="mt-4 max-w-[38rem] text-[0.95rem] leading-relaxed text-ink">
-                  <span className="font-bold">What I handle: </span>
-                  {handles}
-                </p>
+                <p className="mt-3 max-w-[38rem] text-[1.05rem] leading-relaxed text-ink-2">{handles}</p>
               </div>
             </li>
           ))}
-          <li className="py-7 text-[1.05rem] text-ink-2">
-            After launch I stick around for updates, new pages, and questions.
-          </li>
         </ol>
       </div>
     </section>

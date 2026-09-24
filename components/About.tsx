@@ -58,8 +58,8 @@ export default function About() {
               of it points the same way, more people find you and more of them call.
             </p>
             <p>
-              You won&apos;t get handed off or stuck in a queue. You work with me start to finish, and I don&apos;t
-              disappear after launch.
+              There&apos;s no account manager or support queue in between. If something on your site needs to change
+              after launch, you text me and I fix it.
             </p>
           </div>
 

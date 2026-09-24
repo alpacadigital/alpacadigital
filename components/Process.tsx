@@ -5,7 +5,7 @@ const stops = [
   },
   {
     title: "A plan in plain English",
-    body: "What to fix first to get you the most calls, and what it'll take. No jargon, no pressure.",
+    body: "I tell you what to fix first to get the most calls and what it'll take to do it.",
   },
   {
     title: "Build and fix",
@@ -13,7 +13,7 @@ const stops = [
   },
   {
     title: "I stick around",
-    body: "Updates, new pages, and questions after launch. You reach me directly, not a support ticket.",
+    body: "After launch I handle updates and new pages, and you can call or text me with questions.",
   },
 ];
 
