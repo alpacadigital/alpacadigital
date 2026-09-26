@@ -32,7 +32,6 @@ Open http://localhost:3000.
 - Contact details: `lib/site.ts`. Fill in `phone` to show call and text links across the site.
 - Client testimonials: `components/Testimonials.tsx`. The section stays hidden until the list has at least one quote. Only add real quotes, with the client's permission.
 - Portfolio: `components/Work.tsx`. Screenshots live in `public/`.
-- Search Console numbers: `components/Results.tsx`.
 - The hero map: `components/RochesterMap.tsx` draws the streets, river, and labels. `components/Hero.tsx` handles the pins, the Buried/Found switch, and the moving searcher dots.
 
 Product and design notes are in `PRODUCT.md` and `DESIGN.md`.
