@@ -7,6 +7,9 @@ const project = {
     "A story-driven site for a family-owned drywall business, with a project gallery and a free estimate form. Now getting found for local drywall searches.",
   url: "https://www.exclusivedrywallcompany.com/",
   screenshot: "/www.exclusivedrywallcompany.com_.png",
+  // Sent by the client on 2026-09-26, lightly edited with their OK.
+  quote:
+    "I'm so grateful for Gates's skills! We'd wanted a website for our small family business for a while, but it felt overwhelming because we didn't know exactly what we wanted or how long it would take. Gates gave us options and was patient with every change. So smooth from start to finish. Talk to Gates and make it happen with him!",
 };
 
 const domain = new URL(project.url).hostname.replace(/^www\./, "");
@@ -32,13 +35,27 @@ export default function Work() {
               </span>
             </div>
             <p className="mt-6 max-w-[38rem] text-[1.05rem] leading-relaxed text-ink-2">{project.description}</p>
+            <figure className="mt-10">
+              <svg width="34" height="26" viewBox="0 0 34 26" className="text-ink" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M0 26V15.6C0 6.9 4.6 1.7 13.2 0l1.6 4.1C10.2 5.5 7.9 8.3 7.6 12.4H14V26H0Zm19.2 0V15.6C19.2 6.9 23.8 1.7 32.4 0L34 4.1c-4.6 1.4-6.9 4.2-7.2 8.3h6.4V26H19.2Z"
+                />
+              </svg>
+              <blockquote className="mt-4 max-w-[38rem] text-[1.3rem] leading-snug font-semibold text-ink">
+                {project.quote}
+              </blockquote>
+              <figcaption className="mt-4 text-[0.95rem] text-ink-2">
+                <span className="font-bold text-ink">{project.name}</span>, Rochester, MN
+              </figcaption>
+            </figure>
           </div>
 
           <a
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="panel group block overflow-hidden rounded-2xl bg-paper"
+            className="panel group block self-start overflow-hidden rounded-2xl bg-paper"
           >
             <span className="flex items-center gap-3 border-b border-rule px-4 py-3">
               <span className="flex gap-1.5" aria-hidden="true">
