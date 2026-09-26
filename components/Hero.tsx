@@ -469,8 +469,8 @@ export default function Hero({ map }: { map: ReactNode }) {
                 or call {site.phone}
               </a>
             ) : (
-              <a href="#results" className="px-3 py-3 text-center font-semibold text-ink underline decoration-rule underline-offset-4 hover:decoration-ink">
-                See real results
+              <a href="#work" className="px-3 py-3 text-center font-semibold text-ink underline decoration-rule underline-offset-4 hover:decoration-ink">
+                See my work
               </a>
             )}
           </div>
