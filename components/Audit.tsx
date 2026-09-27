@@ -135,7 +135,7 @@ export default function Audit() {
                 <label htmlFor="a-website" className={labelClass}>
                   Website or Google listing <span className="font-normal text-ink-2">(optional)</span>
                 </label>
-                <input id="a-website" name="website" inputMode="url" placeholder="yourbusiness.com or a Google Maps link" maxLength={200} className={inputClass} />
+                <input id="a-website" name="website" inputMode="url" placeholder="yourbusiness.com or Maps link" maxLength={200} className={inputClass} />
               </div>
 
               {status === "error" && (

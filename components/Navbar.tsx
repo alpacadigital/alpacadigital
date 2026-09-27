@@ -25,7 +25,7 @@ function ThemeToggle() {
     <button
       type="button"
       onClick={() => setTheme(night ? "light" : "dark")}
-      className="grid size-10 place-items-center rounded-full text-ink-2 transition-colors hover:bg-land hover:text-ink"
+      className="grid size-11 place-items-center rounded-full text-ink-2 transition-colors hover:bg-land hover:text-ink"
       aria-label={night ? "Switch to day map" : "Switch to night map"}
     >
       <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
