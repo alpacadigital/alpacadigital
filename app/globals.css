@@ -149,6 +149,35 @@ html {
   animation: caret 1s steps(1) infinite;
 }
 
+/* The process route draws itself as it scrolls into view. Unsupported browsers show the finished line. */
+@keyframes route-draw-y {
+  from {
+    transform: scaleY(0);
+  }
+}
+@keyframes route-draw-x {
+  from {
+    transform: scaleX(0);
+  }
+}
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .route-draw {
+      transform-origin: top;
+      animation: route-draw-y linear both;
+      animation-timeline: view();
+      animation-range: entry 30% cover 55%;
+    }
+    @media (min-width: 64rem) {
+      .route-draw {
+        transform-origin: left;
+        animation-name: route-draw-x;
+        animation-range: entry 60% cover 50%;
+      }
+    }
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

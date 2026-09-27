@@ -31,7 +31,7 @@ export default function Process() {
             aria-hidden="true"
             className="absolute top-0 bottom-0 left-[13px] w-[14px] rounded-full bg-street ring-[1.5px] ring-casing lg:top-[13px] lg:right-0 lg:bottom-auto lg:left-0 lg:h-[14px] lg:w-auto"
           >
-            <span className="absolute inset-1 rounded-full bg-route" />
+            <span className="route-draw absolute inset-1 rounded-full bg-route" />
           </span>
           {stops.map((stop, i) => (
             <li key={stop.title} className="relative grid grid-cols-[40px_minmax(0,1fr)] gap-5 lg:block">
