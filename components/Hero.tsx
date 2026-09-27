@@ -422,7 +422,6 @@ export default function Hero({ map }: { map: ReactNode }) {
           </svg>
         </div>
         <div className="pointer-events-none absolute right-6 bottom-6 hidden items-center gap-3 text-xs font-semibold text-ink-2 lg:flex">
-          <span className="tabular">44.02° N, 92.47° W</span>
           <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
             <circle cx="14" cy="14" r="13" className="fill-paper stroke-rule" />
             <path d="M14 4l4 11h-8z" className="fill-ink" />

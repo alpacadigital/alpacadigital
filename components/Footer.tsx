@@ -61,7 +61,6 @@ export default function Footer() {
             © {new Date().getFullYear()} Alpaca Digital<span className="mr-2 ml-1">·</span>
             {site.owner}
           </p>
-          <p className="tabular">44.02° N, 92.47° W</p>
         </div>
       </div>
     </footer>
