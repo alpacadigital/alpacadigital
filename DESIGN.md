@@ -39,7 +39,7 @@ colors:
 typography:
   display:
     fontFamily: "Big Shoulders, Arial Narrow, sans-serif"
-    fontSize: "clamp(3.6rem, 5.2vw, 5.6rem)"
+    fontSize: "clamp(3.6rem, 6.2vw, 6rem)"
     fontWeight: 800
     lineHeight: 0.92
     letterSpacing: "-0.01em"
@@ -203,7 +203,7 @@ A cartographic palette: desaturated land and ink neutrals, map-feature hues kept
 **Character:** A Midwestern civic display face over a Highway Gothic descendant. Headlines read like city signage; text, labels, and figures read like road signs.
 
 ### Hierarchy
-- **Display** (800, clamp(3.6rem, 5.2vw, 5.6rem) on desktop, clamp(3.1rem, 11vw, 4.25rem) on phones, 0.92, uppercase): the hero H1 only.
+- **Display** (800, clamp(3.6rem, 6.2vw, 6rem) on desktop, clamp(3.1rem, 14vw, 4.25rem) on phones, 0.92, uppercase): the hero H1 only.
 - **Headline** (800, clamp(2.6rem, 6vw, 4.4rem), 0.95, uppercase): every section H2, balanced wrap, often capped at 16 to 18ch.
 - **Title** (800, 2rem to 2.4rem, 1, uppercase, Big Shoulders): service names; also the audit form title (1.7rem) and the Results total figure.
 - **Title (text)** (Overpass 700, 1.25rem to 1.35rem): route stop titles, project names, one-line job statements.
@@ -222,7 +222,7 @@ Two containers: the hero stage runs to 1600px with the map full-bleed behind it,
 
 Desktop sections split on asymmetric 5:7 or 5:6 grids, with the heading column sometimes sticky. Lists are ruled: a 2px ink top rule, then 1px rule hairlines between rows.
 
-The hero changes form by breakpoint. On desktop the map fills the viewport (at least 760px tall), the white sheet floats on the left (up to 600px wide, 24px inset), and the results panel docks top-right at 360px. On phones the map is a 320px band on top and the sheet rises over it as a bottom sheet with a 28px top radius, keeping the H1 and audit button above the fold. The navbar is a floating pill 12px from the top edge (24px on desktop).
+The hero changes form by breakpoint. On desktop the map fills the viewport (at least 760px tall), the white sheet floats on the left (up to 600px wide, 24px inset), and the results panel docks top-right at 360px. On phones the map is a 320px band on top and the sheet rises over it with a 28px radius and the results panel floats 24px below it, keeping the H1 and audit button above the fold. The navbar is a floating pill 12px from the top edge (24px on desktop).
 
 ## Elevation & Depth
 

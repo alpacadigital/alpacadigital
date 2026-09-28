@@ -432,7 +432,7 @@ export default function Hero({ map }: { map: ReactNode }) {
 
       <div className="relative mx-auto max-w-[1600px] lg:pointer-events-none lg:min-h-[max(100svh,760px)]">
         {/* The sheet */}
-        <div className="panel pointer-events-auto relative -mt-8 rounded-t-[28px] bg-paper px-5 pt-7 pb-10 sm:px-8 lg:absolute lg:top-[88px] lg:bottom-6 lg:left-6 lg:mt-0 lg:flex lg:w-[min(44vw,600px)] lg:flex-col lg:rounded-[28px] lg:px-12 lg:py-10">
+        <div className="panel pointer-events-auto relative -mt-8 rounded-[28px] bg-paper px-5 pt-7 pb-10 sm:px-8 lg:absolute lg:top-[88px] lg:bottom-6 lg:left-6 lg:mt-0 lg:flex lg:w-[min(44vw,600px)] lg:flex-col lg:px-12 lg:py-10">
           <div className="lg:my-auto">
             <div className="mb-7 flex items-center gap-3">
               <Image src="/gates.png" alt="Gates Jones" width={44} height={44} className="size-11 rounded-full object-cover" priority />
@@ -445,13 +445,12 @@ export default function Hero({ map }: { map: ReactNode }) {
               </p>
             </div>
 
-            <h1 className="font-display text-[clamp(3.1rem,11vw,4.25rem)] leading-[0.92] font-extrabold tracking-[-0.01em] text-ink uppercase lg:text-[clamp(3.6rem,5.2vw,5.6rem)]">
-              Be the first call when Rochester searches.
+            <h1 className="font-display text-[clamp(3.1rem,14vw,4.25rem)] leading-[0.92] font-extrabold tracking-[-0.01em] text-ink uppercase lg:text-[clamp(3.6rem,6.2vw,6rem)]">
+              Get more customers.
             </h1>
 
-            <p className="mt-6 max-w-[34rem] text-[1.08rem] leading-relaxed text-ink-2 lg:text-[1.15rem]">
-              I build your website, fix up your Google Business Profile, and handle your local SEO. So when someone nearby
-              searches for what you do, they find you and call you.
+            <p className="mt-6 max-w-[30rem] text-[1.12rem] leading-relaxed text-ink-2 lg:text-[1.2rem]">
+              I build your website and fix your Google listing so people nearby call you first.
             </p>
 
             <div className="mt-8 flex flex-col gap-x-6 gap-y-1 sm:flex-row sm:flex-wrap sm:items-center">
@@ -459,7 +458,7 @@ export default function Hero({ map }: { map: ReactNode }) {
                 href="#audit"
                 className="group inline-flex items-center justify-center gap-2 rounded-full bg-route px-7 py-4 text-[1.02rem] font-bold whitespace-nowrap text-route-ink shadow-[0_6px_18px_-6px_var(--route)] transition-[transform,box-shadow] duration-300 ease-settle hover:-translate-y-0.5 hover:shadow-[0_10px_24px_-8px_var(--route)]"
               >
-                Get my free visibility audit
+                Get my free audit
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-300 group-hover:translate-x-0.5" aria-hidden="true">
                   <path d="M5 12h14M13 6l6 6-6 6" />
                 </svg>
@@ -474,9 +473,6 @@ export default function Hero({ map }: { map: ReactNode }) {
                 </a>
               )}
             </div>
-            <p className="mt-4 text-sm text-ink-2">
-              It&apos;s free. I&apos;ll show you where you rank and what&apos;s costing you calls.
-            </p>
           </div>
 
           {/* Proof before the ask */}
@@ -502,7 +498,7 @@ export default function Hero({ map }: { map: ReactNode }) {
         </div>
 
         {/* Local results, floating over the map */}
-        <div className="pointer-events-auto px-5 pb-12 sm:px-8 lg:absolute lg:top-[88px] lg:right-6 lg:w-[360px] lg:p-0">
+        <div className="pointer-events-auto px-5 pt-6 pb-12 sm:px-8 lg:absolute lg:top-[88px] lg:right-6 lg:w-[360px] lg:p-0">
           <ResultsCard found={found} setFound={choose} ranks={ranks} />
         </div>
       </div>
