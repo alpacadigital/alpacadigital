@@ -55,15 +55,15 @@ export const viewport: Viewport = {
   ],
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
+const business = {
   "@type": "ProfessionalService",
+  "@id": `${site.url}/#business`,
   name: site.name,
   url: site.url,
   email: site.email,
   ...(site.phone && { telephone: site.phone }),
   image: `${site.url}/gates.png`,
-  logo: `${site.url}/alpaca-logo.png`,
+  logo: `${site.url}/icon.png`,
   description,
   founder: { "@type": "Person", name: site.owner },
   address: {
@@ -74,6 +74,15 @@ const jsonLd = {
   },
   areaServed: { "@type": "City", name: "Rochester, Minnesota" },
   knowsAbout: ["Web design", "Local SEO", "Google Business Profile optimization", "Copywriting"],
+};
+
+// WebSite tells Google which name to show in results instead of the bare domain.
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "WebSite", name: site.name, alternateName: "alpacadigital.co", url: `${site.url}/`, publisher: { "@id": business["@id"] } },
+    business,
+  ],
 };
 
 export default function RootLayout({
