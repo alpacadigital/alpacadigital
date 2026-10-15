@@ -8,6 +8,10 @@ const faqs = [
     a: "No, and nobody can honestly promise that, because Google decides the rankings. What I can do is fix the things Google looks at, like your profile, your reviews, your website, and whether your business info matches everywhere. Then I show you where you stand with real numbers from Google.",
   },
   {
+    q: "Will this help me show up in ChatGPT and other AI tools?",
+    a: "It can help. More people now ask ChatGPT, Gemini, and Claude things like \"who's a good dentist in Rochester?\" These tools learn about local businesses from your website, your Google profile, and your reviews, so I make sure those are clear, complete, and say the same thing. Nobody controls what an AI says, so I won't promise you a spot in its answer. But a business with clear, consistent info is easier for it to get right.",
+  },
+  {
     q: "How long until I see results?",
     a: "Some fixes, like a broken contact form or a missing phone number, help the day they go live. Rankings usually take a few months to move. After the audit I'll tell you what to expect for your business.",
   },

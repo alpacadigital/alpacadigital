@@ -29,6 +29,7 @@ export const metadata: Metadata = {
     "Rochester MN SEO",
     "local SEO Rochester",
     "Google Business Profile optimization",
+    "AI search optimization",
     "small business website Rochester MN",
     "Alpaca Digital",
     "Gates Jones",
@@ -73,7 +74,7 @@ const business = {
     addressCountry: "US",
   },
   areaServed: { "@type": "City", name: "Rochester, Minnesota" },
-  knowsAbout: ["Web design", "Local SEO", "Google Business Profile optimization", "Copywriting"],
+  knowsAbout: ["Web design", "Local SEO", "Google Business Profile optimization", "AI search optimization", "Copywriting"],
 };
 
 // WebSite tells Google which name to show in results instead of the bare domain.

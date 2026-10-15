@@ -27,7 +27,7 @@ A local designer who is accountable for the phone ringing, not just the handoff 
 
 ## Capabilities and Constraints
 
-- Services: custom websites (Next.js), copywriting, SEO (technical, on-page, local), Google Business Profile optimization and ranking, hosting, ongoing support/updates.
+- Services: custom websites (Next.js), copywriting, SEO (technical, on-page, local, and AI search readiness for ChatGPT, Gemini, Claude and Google's AI answers; never promise placement in AI answers), Google Business Profile optimization and ranking, hosting, ongoing support/updates.
 - Stack: Next.js 16 App Router, React 19, Tailwind CSS v4, next-themes, Resend. Deployed at alpacadigital.co.
 - Pricing: undecided. Do not show prices.
 

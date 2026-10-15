@@ -6,6 +6,7 @@ import { site, telHref } from "@/lib/site";
 const checks = [
   "Where you rank on the map for your most important searches",
   "A checkup of your Google Business Profile",
+  "What ChatGPT and other AI tools say when someone asks about businesses like yours",
   "How you compare to the competitors showing up ahead of you",
   "What your website could fix to turn more visits into calls",
 ];

@@ -42,6 +42,7 @@ const entries = [
     job: "Show up when they search.",
     body: "I find out what people around here actually type, then build the pages and fix the technical side so Google knows exactly what you do and where you do it.",
     handles: "That covers keyword research, service pages, site speed, page titles, schema, and making sure your business info matches everywhere online.",
+    ai: "People also ask ChatGPT, Gemini, and Claude who to call, and Google now answers at the top of the page too. I write your pages as clear answers and keep your info the same everywhere, so those tools have the right facts about you.",
   },
   {
     Symbol: ProfileSymbol,
@@ -101,7 +102,7 @@ export default function Services() {
         </div>
 
         <ol className="border-t-2 border-ink">
-          {entries.map(({ Symbol, name, job, body, handles }) => (
+          {entries.map(({ Symbol, name, job, body, handles, ai }) => (
             <li key={name} className="grid gap-5 border-b border-rule py-9 sm:grid-cols-[4rem_minmax(0,1fr)] sm:gap-7 lg:py-11">
               <Symbol />
               <div>
@@ -111,6 +112,7 @@ export default function Services() {
                 <p className="mt-2 text-xl font-bold text-ink">{job}</p>
                 <p className="mt-3 max-w-[38rem] text-[1.05rem] leading-relaxed text-ink-2">{body}</p>
                 <p className="mt-3 max-w-[38rem] text-[1.05rem] leading-relaxed text-ink-2">{handles}</p>
+                {ai && <p className="mt-3 max-w-[38rem] text-[1.05rem] leading-relaxed text-ink-2">{ai}</p>}
               </div>
             </li>
           ))}
