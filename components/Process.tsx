@@ -1,7 +1,7 @@
 const stops = [
   {
     title: "Free visibility audit",
-    body: "I check where you rank on the map, how your Google Business Profile looks, your website, and who's showing up ahead of you.",
+    body: "I check where you rank on the map, how your Google Business Profile looks, your website, what ChatGPT and other AI tools say about you, and who's showing up ahead of you.",
   },
   {
     title: "A plan in plain English",

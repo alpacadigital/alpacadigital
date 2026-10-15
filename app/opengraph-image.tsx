@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 
-export const alt = "Alpaca Digital: Be the first call when Rochester searches.";
+export const alt = "Alpaca Digital: Get more customers.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -45,11 +45,11 @@ export default async function Image() {
             <img src={logoSrc} width={34} height={54} alt="" />
             <div style={{ fontFamily: "Display", fontSize: 40, letterSpacing: 2, color: "#13201b" }}>ALPACA DIGITAL</div>
           </div>
-          <div style={{ display: "flex", fontFamily: "Display", fontSize: 96, lineHeight: 0.92, color: "#13201b", maxWidth: 1000 }}>
-            BE THE FIRST CALL WHEN ROCHESTER SEARCHES.
+          <div style={{ display: "flex", fontFamily: "Display", fontSize: 140, lineHeight: 0.9, color: "#13201b", maxWidth: 760 }}>
+            GET MORE CUSTOMERS.
           </div>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-            <div style={{ fontFamily: "Text", fontSize: 28, color: "#45544d" }}>Websites, local SEO, Google Business Profile</div>
+            <div style={{ fontFamily: "Text", fontSize: 28, color: "#45544d" }}>Websites and Google listings for Rochester businesses</div>
             <div
               style={{
                 display: "flex",
@@ -63,7 +63,7 @@ export default async function Image() {
                 whiteSpace: "nowrap",
               }}
             >
-              Free visibility audit
+              Free audit
             </div>
           </div>
         </div>

@@ -19,6 +19,10 @@ const text = Overpass({
 const description =
   "Gates Jones helps Rochester, MN businesses get more customers from Google: websites that turn visitors into calls, local SEO, and Google Business Profile rankings. Get a free visibility audit.";
 
+// Shown under the title when the link is shared, so it skips the search jargon.
+const shareDescription =
+  "I build your website and fix your Google listing so people nearby call you first. Get a free audit.";
+
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: "Alpaca Digital | Websites, Local SEO & Google Business Profile in Rochester, MN",
@@ -35,8 +39,8 @@ export const metadata: Metadata = {
     "Gates Jones",
   ],
   openGraph: {
-    title: "Be the first call when Rochester searches | Alpaca Digital",
-    description,
+    title: "Get more customers | Alpaca Digital",
+    description: shareDescription,
     type: "website",
     url: site.url,
     siteName: site.name,
@@ -44,8 +48,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Be the first call when Rochester searches | Alpaca Digital",
-    description,
+    title: "Get more customers | Alpaca Digital",
+    description: shareDescription,
   },
 };
 
